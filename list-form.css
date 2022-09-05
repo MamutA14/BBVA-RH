@@ -1,3 +1,29 @@
 #candidatos{
-    
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width: 100%;
+}
+#candidatos th{
+    background-color:white;
+}
+#candidatos tr{background-color: #f2f2f2;}
+
+#intern-buscador{
+    display: flex;
+    justify-content: space-between;
+}
+
+.trash-icon{
+    width: 4em;
+    height: 4em;
+}
+
+button{
+    all:unset;
+    cursor: pointer;
+}
+button:hover{
+    background-color: white;
+}
+.delete-op{
+    background: white;
 }
