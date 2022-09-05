@@ -4,38 +4,44 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/loginStyle.css">
+    <link rel="stylesheet" href="https://use.typekit.net/idp6mjd.css">
     <title>Login</title>
   </head>
   <body>
     <header>
-      <p>BBVA</p>
-    </header>
-
-    <main>
-      <div>
-        <p>Login</p>
+      <div id="logo-header">
+        <img class="mediana" src="resources/img/bbva-logo.png" alt="BBVA" srcset="">
       </div>
-      <div>
-        <div>
-          <img src="resources/img/person_login.png" alt="person" />
-        </div>
-        <div>
-          <form action="" method="post">
-            <input type="text" id="user" /><br />
-            <input type="password" id="password" /><br />
-            <a href="http://"> <button>Ingresar</button> </a>
-          </form>
-        </div>
-      </div>
-      <div>
-        <img
-          src="resources/img/imagen_login.png"
-          alt="imagen_login"
-          width="300"
-          height="300"
-        />
-      </div>
-    </main>
+      <br>
+  </header>
+  
+  </div>
+  <main>
+      <div id="titulo2">
+          <p class="cabecera" >Login</p>
+      </div>    
+      <div id="hero">
+          <div id="menu-login">
+                  <div id="person-login">
+                      <img src="resources/img/person_login.png" alt="person">
+                  </div>
+                  
+                  <form action="" method="post">
+                      <p>Correo</p>
+                      <input type="text" placeholder="Ingrese correo"><br>
+                      <p>Contraseña</p>
+                      <input type="password" placeholder="Ingrese Contraseña"><br>
+                      <a href="http://">  <button>Ingresar</button> </a>
+                  </form>
+  
+              
+          </div>
+          <div id="attention-img">
+              <img  src="resources/img/imagen_login.png" alt="imagen_login" width="300" height="300">
+          </div>
+      </div>  
+  </main>
     <!-- Agregando funcionalidad a la pagina -->
     <script src="/js/index.js"></script>
   </body>
