@@ -4,34 +4,40 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="loginStyle.css">
     <title>Login</title>
 </head>
 <body>
     <header>
-        <p>BBVA</p>
+        <p class="cabecera">BBVA</p>
+        <br>
     </header>
-
+    
+    </div>
     <main>
-        <div>
-            <p>Login</p>
-        </div>
-        <div>
-            <div>
-                <img src="resources/img/person_login.png" alt="person">
+        <div id="titulo2">
+            <p class="cabecera" >Login</p>
+        </div>    
+        <div id="hero">
+            <div id="menu-login">
+                    <div id="person-login">
+                        <img src="resources/img/person_login.png" alt="person">
+                    </div>
+                    
+                    <form action="" method="post">
+                        <p>Correo</p>
+                        <input type="text" placeholder="Ingrese correo"><br>
+                        <p>Contraseña</p>
+                        <input type="password" placeholder="Ingrese Contraseña"><br>
+                        <a href="http://">  <button>Ingresar</button> </a>
+                    </form>
+    
+                
             </div>
-            <div>
-                <form action="" method="post">
-                    <input type="text"><br>
-                    <input type="password"><br>
-                    <a href="http://">  <button>Ingresar</button> </a>
-                </form>
-
+            <div id="attention-img">
+                <img  src="resources/img/imagen_login.png" alt="imagen_login" width="300" height="300">
             </div>
-        </div>
-        <div>
-            <img src="resources/img/imagen_login.png" alt="imagen_login" width="300" height="300">
-        </div>
-
+        </div>  
     </main>
 </body>
 </html>
