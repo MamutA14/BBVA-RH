@@ -1,37 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <p>BBVA</p>
+      <p>BBVA</p>
     </header>
 
     <main>
+      <div>
+        <p>Login</p>
+      </div>
+      <div>
         <div>
-            <p>Login</p>
+          <img src="resources/img/person_login.png" alt="person" />
         </div>
         <div>
-            <div>
-                <img src="resources/img/person_login.png" alt="person">
-            </div>
-            <div>
-                <form action="" method="post">
-                    <input type="text"><br>
-                    <input type="password"><br>
-                    <a href="http://">  <button>Ingresar</button> </a>
-                </form>
-
-            </div>
+          <form action="" method="post">
+            <input type="text" id="user" /><br />
+            <input type="password" id="password" /><br />
+            <a href="http://"> <button>Ingresar</button> </a>
+          </form>
         </div>
-        <div>
-            <img src="resources/img/imagen_login.png" alt="imagen_login" width="300" height="300">
-        </div>
-
+      </div>
+      <div>
+        <img
+          src="resources/img/imagen_login.png"
+          alt="imagen_login"
+          width="300"
+          height="300"
+        />
+      </div>
     </main>
-</body>
+    <!-- Agregando funcionalidad a la pagina -->
+    <script src="/js/index.js"></script>
+  </body>
 </html>
