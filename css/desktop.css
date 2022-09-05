@@ -1,0 +1,65 @@
+body{
+    background: #006ec1;
+    font-family: 'Noto Sans', sans-serif;
+    
+}
+header{
+    color: white;
+}
+
+.cabeza-nav{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+#user-pic{
+    width: 40%;
+    align-items: center;
+}
+
+.Bienvenida{
+    font-size: small;
+    display: flex;
+    
+}
+.rol{
+    font-size:x-small;
+}
+main{
+    display: flex;
+}
+nav{
+    background: #2C93E0;
+    width: 15em;
+    height: 33.5em;
+    float: left;
+    margin-left: -.5%;
+    color: white;
+}
+section{
+    background: white;
+    float: right;
+    margin-right: -.5%;
+    width: 100em;
+    
+}
+
+ul{
+    list-style-type: none;
+    padding: 0;
+}
+ul li{
+    margin-top: 15%;
+    color: white;
+    margin-left:0% ;
+}
+ul button{
+    all:unset;
+    cursor: pointer;
+    background-color: #0F74BE;
+    width: 100%;
+    height: 4em;
+    border-radius: 10%;
+    
+}
+
