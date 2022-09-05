@@ -1,6 +1,8 @@
 body{
     background: #2C93E0;
-    font-family: 'Noto Sans', sans-serif;
+
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
 }
 
 header{
@@ -9,11 +11,13 @@ header{
 }
 .cabecera{
     color: white;
-    font-family: droid-sans, sans-serif;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-weight: 700;
-    font-style: normal;
+
+
 
 }
+
 
 #logo-header{
     margin-left: 30px;
@@ -23,7 +27,6 @@ img.mediana{
     width: 100px;
     height: 30px;
   }
-
 main{
     display: flex;
     flex-direction: column;
@@ -117,4 +120,3 @@ input[type=password], select {
     border-radius: 4px;
     box-sizing: border-box;
   }
-
