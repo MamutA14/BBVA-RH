@@ -1,8 +1,6 @@
 body{
     background: #006ec1;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-
-    
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;  
 }
 header{
     color: white;
@@ -17,13 +15,41 @@ header{
     width: 40%;
     align-items: center;
 }
+img.mediana{
+    width: 100px;
+    height: 30px;
+  }
+
+#cabezera-desk{
+    display: flex;
+    justify-content: space-between;
+}  
+
+#cabezera-desk button{
+    background-color: unset;
+    border: none;
+    cursor: pointer;
+    border-radius: 100%;
+}
+
+button:hover{
+    background: gray;
+}
+
+button img:hover{
+    background: gray;
+}
 
 .Bienvenida{
     font-size: small;
     display: flex;
+    margin-bottom: 1px;
     
 }
+
+
 .rol{
+    margin-top: unset;
     font-size:x-small;
 }
 main{

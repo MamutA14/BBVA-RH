@@ -27,3 +27,15 @@ button:hover{
 .delete-op{
     background: white;
 }
+
+.finder{
+    display: flex;
+    background-color:#DADADA;
+    border-radius: 20px;
+}
+.finder input[type="search"]{
+    position: relative;
+    border: none;
+    background-color: unset;
+}
+
