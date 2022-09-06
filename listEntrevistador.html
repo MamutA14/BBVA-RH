@@ -1,16 +1,19 @@
-<div>
+
+<link rel="stylesheet" href="css/listEntrevistador.css">
+<div id="intern-buscador">
     <h1>Candidatos</h1>
     <form action="" method="get">
-        <div>
-            <img src="" alt="img">
-            <input type="search" placeholder="Buscar candidato...">
+        <div class="finder">
+            <img src="resources/icons/find.svg" alt="img">
+            <input type="search"  id="search" placeholder="Buscar candidato...">
 
-        </div> 
+        </div>
+        
     </form>
 </div>
 <div>
 
-    <table>
+    <table id="candidatos" >
         <tr>
             <th>Nombre</th>
             <th>Posicion</th>
@@ -23,8 +26,15 @@
             <td>Lorem, ipsum.</td>
             <td>Lorem ipsum dolor sit.</td>
             <td>Lorem, ipsum dolor.</td>
-            <td>
-                <button> <img  src="" alt=""></button> 
+            <td>Lorem.</td>
+            <td class="watch-op">
+                <div class="ver-op">
+                    <button>
+                        <img  class = "icon-op" src="resources/icons/eye.svg" alt="ver">
+                    </button> 
+                    <label for="">Ver perfil</label>
+                </div>
+
             </td>
         </tr>
         <tr>
@@ -32,9 +42,35 @@
             <td>Lorem, ipsum.</td>
             <td>Lorem ipsum dolor sit.</td>
             <td>Lorem, ipsum dolor.</td>
+            <td>Lorem.</td>
+            <td class="watch-op">
+                <div class="ver-op">
+                    <button>
+                        <img  class = "icon-op" src="resources/icons/eye.svg" alt="ver">
+                        
+                    </button> 
+                    <label for="">Ver perfil</label>
+                    
+                </div>
+                
+            </td>
 
-            <td>
-                <button><img src="" alt=""></button> 
+        </tr>
+
+        <tr>
+            <td>Lorem ipsum dolor sit amet consectetur.</td>
+            <td>Lorem, ipsum.</td>
+            <td>Lorem ipsum dolor sit.</td>
+            <td>Lorem, ipsum dolor.</td>
+            <td>Lorem.</td>
+            <td class="edit-op">
+                <div class="ver-op">
+                    <button>
+                        <img  class = "icon-op" src="resources/icons/pencil-fill.svg" alt="ver">
+                    </button> 
+                    <label for="">Editar</label>
+                </div>
+    
             </td>
 
         </tr>

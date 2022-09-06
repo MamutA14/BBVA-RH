@@ -1,0 +1,64 @@
+#candidatos{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width: 100%;
+}
+#candidatos th{
+    background-color:white;
+}
+#candidatos tr{background-color: #f2f2f2;}
+
+#intern-buscador{
+    display: flex;
+    justify-content: space-between;
+}
+
+.icon-op{
+    width: 5px;
+    height: 5px;
+}
+
+button{
+    all:unset;
+    cursor: pointer;
+}
+button:hover{
+    background-color: white;
+}
+.delete-op{
+    background: white;
+}
+
+.finder{
+    display: flex;
+    background-color:#DADADA;
+    border-radius: 20px;
+}
+.finder input[type="search"]{
+    position: relative;
+    border: none;
+    background-color: unset;
+}
+
+.ver-op{
+    display: flex;
+    justify-content: flex-start;
+    font-size: small;
+    background: #0F74BE;
+    border-radius: 20px;
+    color: white;
+    width: 75%;
+    margin-left: 20%;
+    box-shadow: 0 0 5px -1px rgba(0,0,0,0.2);
+    cursor:pointer;
+    vertical-align:middle;
+
+}
+.ver-op button{
+
+    margin-left: 10%;
+}
+.ver-op img{
+    width: 25px;
+    height: 25px;
+    
+}
