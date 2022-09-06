@@ -1,7 +1,7 @@
 const $contenido = document.getElementById("id-contenido");
 
 $contenido.appendChild(Tabla({
-    "cabecera": ["Nombre", "Posicion", "Entrevistador", "Estatus", "Fecha Entrevista"]
+    "cabecera": ["Nombre", "Posicion", "Entrevistador", "Estatus", "Fecha Entrevista", "Opciones"]
 }));
 
 
@@ -20,6 +20,7 @@ function Tabla(AJson){
         $titulos.appendChild($titulo);
     });
     $tcabecera.appendChild($titulos);
+
     
 
     $tabla.appendChild($tcabecera);
