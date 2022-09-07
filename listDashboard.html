@@ -1,17 +1,19 @@
-<div>
+<link rel="stylesheet" href="css/listDashBoard.css">
+<div class="dashboard">
     <h1>Vista General</h1>
-    <div>
+    <div id="intern-buscador">
         <div>
-            <a href=""><button>Agregar</button></a>
+            <a href="" class="agregar-op"><button><img src="resources/icons/user-add.svg" alt=""> Agregar</button></a>
         </div>
         <div>
-            <form action="" method="get">
+            <form action=""  method="get" class="finder">
+                <img src="resources/icons/find.svg" alt="">
                 <input type="search" name="" id="" placeholder="Buscar Candidato">
             </form>
         </div>
     </div>
 
-    <div>
+    <div id="table">
         <table>
             <tr>
                 <th>RH</th>
@@ -23,7 +25,7 @@
                 <th>CV</th>
                 <th>Opciones</th>
             </tr>
-            <tr>
+            <tr class="content-table">
                 <td>Lorem, ipsum.</td>
                 <td>Lorem, ipsum.</td>
                 <td>Lorem, ipsum.</td>
@@ -32,7 +34,7 @@
                 <td>Lorem, ipsum.</td>
                 <td>Lorem, ipsum.</td>
                 <td>
-                    <select name="" id="">
+                    <select name="" id="opciones-op">
                         <option value="">Opciones</option>
                         <option value="">opcion 1</option>
                         <option value="">opcion 2</option>
