@@ -11,8 +11,8 @@
 .piechart {
     margin-top: 5%;
     margin-left: 25%;
-    width: 50%;
-    height: 50%;
+    width: 40%;
+    height: 40%;
     border-radius: 50%;
     background-image: conic-gradient( gray 
 70deg
@@ -226,4 +226,38 @@ ul{
 .text-pie{
     color: #666666;
     
+}
+
+@media(max-width: 760px) {
+
+    .title-gr{
+        display: flex;
+        justify-content: center;
+    }
+    #title-circ{
+        font-size: 50%;
+    }
+    .circular{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 30%;
+        width: 30%;
+    }
+
+    .piechart {
+        margin-bottom: 5%;
+        margin-top: 5%;
+        margin-left: 25%;
+        width: 40%;
+        height: 100px;
+        border-radius: 50%;
+    }   
+
+    
+    .circular ul{
+        margin-right: 5%;
+        font-size: 1%;
+        padding-left: 0%    ;
+    }
 }
