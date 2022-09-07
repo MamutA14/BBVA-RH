@@ -74,12 +74,17 @@ img.mediana{
     border-radius: 100%;
 }
 
-button:hover{
-    background: gray;
+ul button:hover{
+    background-color: gray; 
+}
+.buttons-header button:hover{
+    background-color: gray; 
 }
 
+
+
 button img:hover{
-    background: gray;
+    background-color: (0,0,0,0.5); 
 }
 
 .Bienvenida{
@@ -128,8 +133,61 @@ ul button{
     height: 4em;
 }
 
+#hamburger-button{
+    display: none;
+}
+footer{
+    display: none;
+}
+
 @media(max-width: 1024px) {
-    nav.hide{
-        color: transparent;
+    /*main{
+        height: 600px;
+    }*/
+
+    section{
+        height:400px
+    }
+    .buttons-header{
+        display: flex;
+        padding-left: 15%;
+        
+    }
+    #hamburger-button{
+        display: block;
+    }
+
+    .mediana{
+        width: 10%;
+    }
+    .buttons-header button{
+        width: 25%;
+
+    }
+    nav{
+        display: none;
+    }
+   /* nav{
+        float: left;
+        display: block;
+    }*/
+    footer{
+        margin-top: 5%;
+        display: flex;
+        justify-content: space-around;
+    }
+    footer button{
+        background-color: unset;
+        border: none;
+        cursor: pointer;
+    }
+    .img-footer{
+        width: 30px;
+    }
+
+    body{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
     }
 }
