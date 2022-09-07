@@ -6,6 +6,12 @@ header{
     color: white;
 }
 
+.btn-eliminaRegistro{
+    border: 0;
+    background-color: white;
+    color: red;
+}
+
 .cabeza-nav{
     display: flex;
     flex-direction: column;

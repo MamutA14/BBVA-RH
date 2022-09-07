@@ -20,11 +20,11 @@ function CargaCandidatos(){
     <table class="t-contenido">
     <thead>
         <tr>
-            <th>Nombre</th>
-            <th>Posicion</th>
-            <th>Entrevistador</th>
-            <th>Estatus</th>
-            <th>Fecha entrevista</th>
+            <th>Nombre <i class="fa-sharp fa-solid fa-caret-down"></i></th>
+            <th>Posicion <i class="fa-sharp fa-solid fa-caret-down"></i></th>
+            <th>Entrevistador <i class="fa-sharp fa-solid fa-caret-down"></i></th>
+            <th>Estatus <i class="fa-sharp fa-solid fa-caret-down"></i></th>
+            <th>Fecha entrevista <i class="fa-sharp fa-solid fa-caret-down"></i></th>
             <th></th>
         </tr>
     </thead>
@@ -36,7 +36,7 @@ function CargaCandidatos(){
             <td>Entrevistado</td>
             <td>29/08/2022</td>
             <td>
-                <button class="fa fa-trash"></button>
+                <button class="fa fa-trash btn-eliminaRegistro fa-2x"></button>
             </td>
         </tr>
         <tr>
@@ -46,7 +46,7 @@ function CargaCandidatos(){
             <td>Pendiente</td>
             <td>29/08/2022</td>
             <td>
-                <button class="fa fa-trash"></button>
+                <button class="fa fa-trash btn-eliminaRegistro fa-2x"></button>
             </td>
         </tr>
         <tr>
@@ -56,7 +56,7 @@ function CargaCandidatos(){
             <td>Entrevistado</td>
             <td>29/08/2022</td>
             <td>
-                <button class="fa fa-trash"></button>
+                <button class="fa fa-trash btn-eliminaRegistro fa-2x"></button>
             </td>
         </tr>
     </tbody>
