@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- link to fontawesome -->
+    <!-- <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css"> -->
+    
     <link rel="stylesheet" href="css/desktop.css">
 
     <title>Document</title>
@@ -13,7 +16,14 @@
     <header>
         <div id="cabezera-desk">
             <p><img class="mediana" src="resources/img/bbva-logo.png" alt="BBVA" srcset=""></p>
-            <button id="bell-button"><img  class="mediana"src="resources/icons/bell.svg" alt="campana"></button>
+            <div class="buttons-header">
+                <button id="bell-button"><img  class="mediana"src="resources/icons/bell.svg" alt="campana"></button>
+                <button id="hamburger-button"><img  class="mediana"src="resources/icons/hamburguer.svg" alt="campana"></button>    
+            </div>
+
+            </div>
+            
+
         </div>
     </header>   
     <main>
@@ -28,15 +38,80 @@
 
     
             <ul>
-                <li><button>Lista de candidatos</button></li>
-                <li><button>Agregar candidato</button></li>
+                <li><button id="id-candidatos">Lista de candidatos</button></li>
+                <li><button id="id-agregar">Agregar candidato</button></li>
             </ul>
         </nav>
         <section>
-            <div>
-                Aqui va el contenido    
+            <div class="contenido" id="id-contenido">
+                <div class="en-linea">
+                    <h2>Candidatos</h2>
+                    <div class="input-busqueda">
+                        <i class="fa fa-search" style="color: white; margin: 5px 3px 5px 10px;" aria-hidden="true"></i><input type="text" placeholder="Buscar Candidato" style="border: 0; background-color: #DADADA; color: #A6A6A6; width: 310px;">
+                    </div>
+                </div>
+                <table class="t-contenido">
+                    <thead>
+                        <tr>
+                            <th>Nombre <i class="fa-sharp fa-solid fa-caret-down"></i></th>
+                            <th>Posicion <i class="fa-sharp fa-solid fa-caret-down"></i></th>
+                            <th>Entrevistador <i class="fa-sharp fa-solid fa-caret-down"></i></th>
+                            <th>Estatus <i class="fa-sharp fa-solid fa-caret-down"></i></th>
+                            <th>Fecha entrevista <i class="fa-sharp fa-solid fa-caret-down"></i></th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Alan Josue Lopez Lopez</td>
+                            <td>Frontend Developer</td>
+                            <td>Luis Flores</td>
+                            <td>Entrevistado</td>
+                            <td>29/08/2022</td>
+                            <td>
+                                <button class="fa fa-trash btn-eliminaRegistro fa-2x" ></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Jorge Aguilar Hernandez</td>
+                            <td>Frontend Developer</td>
+                            <td>Pedro Gomez</td>
+                            <td>Pendiente</td>
+                            <td>29/08/2022</td>
+                            <td>
+                                <button class="fa fa-trash btn-eliminaRegistro fa-2x"></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Set Reyes Sandoval</td>
+                            <td>Frontend Developer</td>
+                            <td>Laura Gomez</td>
+                            <td>Entrevistado</td>
+                            <td>29/08/2022</td>
+                            <td>
+                                <button class="fa fa-trash btn-eliminaRegistro fa-2x" ></button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         </section>
     </main>
-</body>
+    <footer>
+        <button class = footer-button>
+            <img id="hamburger-svg" class="img-footer"  src="resources/icons/hamburguer.svg" alt="menu">
+        </button>
+        
+        <button class="footer-button" >
+            <img id="icon-svg" class="img-footer" src="resources/icons/add-icon.svg" alt="agregar">
+        </button>
+        <button class="footer-button" >
+            <img id="cross-svg" class="img-footer" src="resources/icons/cross-circle.svg" alt="cancelar">
+        </button>
+        
+    </footer>
+    <script src="https://kit.fontawesome.com/c36077751b.js" crossorigin="anonymous"></script>
+    <script src="./js/CargaRH.js"></script>
+
+
 </html>
