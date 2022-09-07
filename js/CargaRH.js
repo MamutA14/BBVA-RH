@@ -2,12 +2,12 @@ const $btnCandidatos = document.getElementById("id-candidatos");
 const $btnAgrega = document.getElementById("id-agregar");
 
 $btnCandidatos.removeEventListener("click", CargaCandidatos);
-// $btnAgrega.removeEventListener("click", CargaDatos);
+$btnAgrega.removeEventListener("click", CargaDatos);
 
 $btnCandidatos.addEventListener("click", CargaCandidatos);
+$btnAgrega.addEventListener("click", CargaDatos);
 
 function CargaCandidatos(){
-    console.log("lsdfkjasñdfjk")
     const $contenido = document.getElementById("id-contenido");
     $contenido.innerHTML = null;
     $contenido.innerHTML = `<table class="t-contenido">
@@ -54,4 +54,38 @@ function CargaCandidatos(){
         </tr>
     </tbody>
 </table>`;
+}
+
+function CargaDatos(){
+    const $contenido = document.getElementById("id-contenido");
+    $contenido.innerHTML = null;
+    $contenido.innerHTML = `
+    <link rel="stylesheet" href="css/form.css">
+    <div>
+        <form action="" method="post">
+            <div class="option">
+                <label for="">Nombre</label>
+                <input type="text" placeholder="Nombre">            
+            </div>
+            <div class="option">
+                <label for="">Posicion</label>
+                <input type="text" placeholder="Posicion">            
+            </div>
+            <div class="option">
+                <label for="">Entrevistador</label>
+                <input type="text" placeholder="Entrevistador">            
+            </div>
+            <div class="option">
+                <label for="">Fecha de entrevista</label>
+                <input type="date" placeholder="Fecha de entrevista">            
+            </div>
+            <div class="option" >
+                <a ><button>Curriculum viate</button></a>
+            <div id="sub">
+                    <input type="button" value="Guardar">
+            </div> 
+            </div>
+        </form>
+</div>
+`;
 }
