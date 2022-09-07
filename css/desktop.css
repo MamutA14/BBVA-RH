@@ -10,7 +10,40 @@ header{
     display: flex;
     flex-direction: column;
     align-content: center;
+} 
+
+.contenido{
+    margin-top: 4rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
 }
+
+.en-linea {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+    margin-left: 15px;
+    margin-right: 55px;
+}
+
+.input-busqueda {
+    border-radius: 45px 45px 45px 45px;
+    background-color: #DADADA;
+    height: fit-content;
+    width: 350px;
+    margin-right: 4px;
+}
+
+.t-contenido{
+    width: 100%;
+    text-align: start;
+}
+
+.t-contenido th {
+    text-align: start;
+}
+
 #user-pic{
     width: 40%;
     align-items: center;
