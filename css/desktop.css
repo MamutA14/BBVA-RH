@@ -13,7 +13,6 @@ header{
 } 
 
 .contenido{
-    margin-top: 4rem;
     margin-left: 1rem;
     margin-right: 1rem;
 }
@@ -22,7 +21,7 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 15px;
+    margin-top: 2rem;
     margin-left: 15px;
     margin-right: 55px;
 }
@@ -38,6 +37,7 @@ header{
 .t-contenido{
     width: 100%;
     text-align: start;
+    margin-top: 4rem;
 }
 
 .t-contenido th {

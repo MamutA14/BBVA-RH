@@ -10,7 +10,14 @@ $btnAgrega.addEventListener("click", CargaDatos);
 function CargaCandidatos(){
     const $contenido = document.getElementById("id-contenido");
     $contenido.innerHTML = null;
-    $contenido.innerHTML = `<table class="t-contenido">
+    $contenido.innerHTML = `
+    <div class="en-linea">
+        <h2>Candidatos</h2>
+        <div class="input-busqueda">
+            <i class="fa fa-search" style="color: white; margin: 5px 3px 5px 10px;" aria-hidden="true"></i><input type="text" placeholder="Buscar Candidato" style="border: 0; background-color: #DADADA; color: #A6A6A6; width: 310px;">
+        </div>
+    </div>
+    <table class="t-contenido">
     <thead>
         <tr>
             <th>Nombre</th>
@@ -61,6 +68,9 @@ function CargaDatos(){
     $contenido.innerHTML = null;
     $contenido.innerHTML = `
     <link rel="stylesheet" href="css/form.css">
+    <div class="en-linea">
+        <h2>Candidatos</h2>
+    </div>
     <div>
         <form action="" method="post">
             <div class="option">
@@ -80,7 +90,7 @@ function CargaDatos(){
                 <input type="date" placeholder="Fecha de entrevista">            
             </div>
             <div class="option" >
-                <a ><button>Curriculum viate</button></a>
+                <a ><button>Curriculum vitae</button></a>
             <div id="sub">
                     <input type="button" value="Guardar">
             </div> 
