@@ -186,8 +186,24 @@ footer{
         margin-top: 5%;
         display: flex;
         justify-content: space-around;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        background: #006ec1;
+        border-radius: 10px;
     }
 
+    body{
+        background-color: white;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;  
+        }
+        header{
+            color: white;
+            background: #006ec1;
+        }
+    main{
+        height: 500px;
+    }
     footer button{
         background-color: unset;
         border: none;

@@ -152,13 +152,103 @@ function CargaCandidatos(){
         const $contenido = document.getElementById("id-contenido");
         $contenido.innerHTML = null;
         $contenido.innerHTML = `
-        <link rel="stylesheet" href="css/desktop.css">
+        <link rel="stylesheet" href="css/listCandidatos.css">
+<div class="intern-candidatos">
+    <h1>Candidatos</h1>
+    <form action="" method="get">
+        <div class="finder">
+            <i class="fa fa-search" style="color: white; margin: 5px 3px 5px 10px;" aria-hidden="true"></i>
+            <input type="search" placeholder="Buscar candidato...">
+
+        </div> 
+    </form>
+</div>
+<div class="candidatos-content">
+
+    <table id="candidatos">
+        <tr>
+                <th>Nombre <i class="fa-sharp fa-solid fa-caret-down"></i></th>
+                <th>Posicion <i class="fa-sharp fa-solid fa-caret-down"></i></th>
+                <th class="not-responsive">Entrevistador <i class="fa-sharp fa-solid fa-caret-down"></i></th>
+                <th class="not-responsive">Estatus <i class="fa-sharp fa-solid fa-caret-down"></i></th>
+                <th class="not-responsive">Fecha entrevista <i class="fa-sharp fa-solid fa-caret-down"></i></th>
+            <th></th>
+        </tr>
+        <tr class="content-table">
+                <tbody>
+                        <tr>
+                        <td class="content-table">Alan Josue Lopez Lopez</td>
+                        <td class="content-table">Frontend Developer</td>
+                        <td class="content-table not-responsive">Luis Flores</td>
+                        <td class="content-table not-responsive">Entrevistado</td>
+                        <td class="content-table not-responsive">29/08/2022</td>
+                        <td class="content-table">
+                                <div class="ver-op">
+                                        <button>
+                                            <img  class = "icon-op" src="resources/icons/eye.svg" alt="ver">
+                                        </button> 
+                                        <label for="">Ver</label>
+                                    </div>
+                        </td>
+                        </tr>
+                        <tr>
+                        <td class="content-table">Jorge Aguilar Hernandez</td>
+                        <td class="content-table">Frontend Developer</td>
+                        <td class="content-table not-responsive">Pedro Gomez</td>
+                        <td class="content-table not-responsive">Pendiente</td>
+                        <td class="content-table not-responsive">29/08/2022</td>
+                        <td class="content-table">
+                                <div class="ver-op">
+                                        <button>
+                                            <img  class = "icon-op" src="resources/icons/eye.svg" alt="ver">
+                                        </button> 
+                                        <label for="">Ver</label>
+                                    </div>
+                        </td>
+                        </tr>
+                        <tr>
+                        <td class="content-table">Set Reyes Sandoval</td>
+                        <td class="content-table">Frontend Developer</td>
+                        <td class="content-table not-responsive">Laura Gomez</td>
+                        <td class="content-table not-responsive">Entrevistado</td>
+                        <td class="content-table not-responsive">29/08/2022</td>
+                        <td class="content-table">
+                                <div class="ver-op">
+                                        <button>
+                                            <img  class = "icon-op" src="resources/icons/eye.svg" alt="ver">
+                                        </button> 
+                                        <label for="">Ver</label>
+                                    </div>
+                        </td>
+                        </tr>
+            <!--<td>Lorem, ipsum.</td>
+            <td>Lorem, ipsum.</td>
+            <td class="not-responsive">Lorem, ipsum.</td>
+            <td class="not-responsive">Lorem, ipsum.</td>
+            <td class="watch-op">
+                <div class="ver-op">
+                    <button>
+                        <img  class = "icon-op" src="resources/icons/eye.svg" alt="ver">
+                    </button> 
+                    <label for="">Ver </label>
+                </div>
+            </td>-->
+        </tr>
+    </table>
+</div>
+
+<!-- <script src="https://kit.fontawesome.com/c36077751b.js" crossorigin="anonymous"></script>
+<script src="./js/CargaRH.js"></script>
+<link rel="stylesheet" href="css/candidatosSU.css">
         <h1 style="text-align: center;">Candidatos</h1>
-        <div class="en-linea">
+        <div class="intern-candidatos">
         <h2>Candidatos</h2>
-        <div class="input-busqueda">
-        <i class="fa fa-search" style="color: white; margin: 5px 3px 5px 10px;" aria-hidden="true"></i><input type="text" placeholder="Buscar Candidato" style="border: 0; background-color: #DADADA; color: #A6A6A6; width: 310px;">
-        </div>
+                <div class="finder">
+                        <i class="fa fa-search" style="color: white; margin: 5px 3px 5px 10px;" aria-hidden="true"></i>
+                        <input type="search" placeholder="Buscar candidato...">
+            
+                    </div> 
+        
         </div>
         <table class="t-contenido">
         <thead>
@@ -179,7 +269,7 @@ function CargaCandidatos(){
         <td>Entrevistado</td>
         <td>29/08/2022</td>
         <td>
-        <button class="fa-solid fa-eye">Ver Perfil</button>
+        <button class="fa-solid fa-eye">Ver </button>
         </td>
         </tr>
         <tr>
@@ -189,7 +279,7 @@ function CargaCandidatos(){
         <td>Pendiente</td>
         <td>29/08/2022</td>
         <td>
-        <button class="fa-solid fa-eye">Ver Perfil</button>
+        <button class="fa-solid fa-eye">Ver</button>
         </td>
         </tr>
         <tr>
@@ -203,7 +293,10 @@ function CargaCandidatos(){
         </td>
         </tr>
         </tbody>
-        </table>`;
+        </table>
+-->
+        <script src="https://kit.fontawesome.com/c36077751b.js" crossorigin="anonymous"></script>
+        <script src="./js/CargaSuperUsuario.js"></script>`;
     }
 }
     

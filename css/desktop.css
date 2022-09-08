@@ -189,5 +189,23 @@ footer{
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        background-color: white;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;  
+    }
+
+    header{
+            color: white;
+            background: #006ec1;
+            margin: 0%;
+    }
+    main{
+        height: 500px;
+    }
+    footer{
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        background: #006ec1;
+        border-radius: 10px;
     }
 }
