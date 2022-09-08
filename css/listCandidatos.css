@@ -61,3 +61,29 @@
     .ver-op label{
         margin-left: 10%;
     }
+
+    @media(max-width: 1024px){
+        .not-responsive{
+            display: none;
+        }
+        .finder{
+            width: 75%;
+            height: 50px;
+            /*display: flex;
+            justify-content: space-around;*/
+
+        }
+        .finder input{
+            margin-right: 20px;
+        }
+        .intern-candidatos{
+            flex-direction: column;
+            justify-content: flex-start;
+        }
+
+        .candidatos-content{
+            display: flex;
+            /*justify-content: space-around;*/
+            
+        }
+    }
