@@ -36,56 +36,55 @@
         </nav>
         <section>
             <div class="contenido" id="id-contenido">
-                <div class="en-linea">
-                    <h2>Candidatos</h2>
-                    <div class="input-busqueda">
-                        <i class="fa fa-search" style="color: white; margin: 5px 3px 5px 10px;" aria-hidden="true"></i><input type="text" placeholder="Buscar Candidato" style="border: 0; background-color: #DADADA; color: #A6A6A6; width: 310px;">
-                    </div>
+                <link rel="stylesheet" href="css/listform.css">
+                <div id="intern-buscador">
+                    <h1>Candidatos</h1>
+                    <form action="" method="get">
+                        <div class="finder">
+                            <i class="fa fa-search" style="color: white; margin: 5px 3px 5px 10px;" aria-hidden="true"></i>
+                            <input type="search"  id="search" placeholder="Buscar candidato...">
+
+                        </div>
+                        
+                    </form>
                 </div>
-                <table class="t-contenido">
-                    <thead>
+                <div class="candidatos-content">
+
+                    <table id="candidatos" >
                         <tr>
-                            <th>Nombre <i class="fa-sharp fa-solid fa-caret-down"></i></th>
-                            <th>Posicion <i class="fa-sharp fa-solid fa-caret-down"></i></th>
-                            <th>Entrevistador <i class="fa-sharp fa-solid fa-caret-down"></i></th>
-                            <th>Estatus <i class="fa-sharp fa-solid fa-caret-down"></i></th>
-                            <th>Fecha entrevista <i class="fa-sharp fa-solid fa-caret-down"></i></th>
+                            <th>Nombre<i class="fa-sharp fa-solid fa-caret-down"></i></th>
+                            <th>Posicion<i class="fa-sharp fa-solid fa-caret-down"></i></th>
+                            <th class="not-responsive">Entrevistador<i class="fa-sharp fa-solid fa-caret-down"></i></th>
+                            <th class="not-responsive">Estatus<i class="fa-sharp fa-solid fa-caret-down"></i></th>
+                            <th class="not-responsive">Fecha Entrevista<i class="fa-sharp fa-solid fa-caret-down"></i></th>
                             <th></th>
                         </tr>
-                    </thead>
-                    <tbody>
                         <tr>
-                            <td>Alan Josue Lopez Lopez</td>
-                            <td>Frontend Developer</td>
-                            <td>Luis Flores</td>
-                            <td>Entrevistado</td>
-                            <td>29/08/2022</td>
-                            <td>
+                            <td>Lorem ipsum dolor sit amet consectetur.</td>
+                            <td>Lorem, ipsum.</td>
+                            <td class="not-responsive">Lorem ipsum dolor sit.</td>
+                            <td class="not-responsive">Lorem, ipsum dolor.</td>
+                            <td class="not-responsive">Lorem.</td>
+                            <td class="delete-op">
                                 <button class="fa fa-trash btn-eliminaRegistro fa-2x" ></button>
                             </td>
                         </tr>
                         <tr>
-                            <td>Jorge Aguilar Hernandez</td>
-                            <td>Frontend Developer</td>
-                            <td>Pedro Gomez</td>
-                            <td>Pendiente</td>
-                            <td>29/08/2022</td>
-                            <td>
-                                <button class="fa fa-trash btn-eliminaRegistro fa-2x"></button>
+                            <td>Lorem ipsum dolor sit amet consectetur.</td>
+                            <td>Lorem, ipsum.</td>
+                            <td class="not-responsive">Lorem ipsum dolor sit.</td>
+                            <td class="not-responsive">Lorem, ipsum dolor.</td>
+                            <td class="not-responsive">Lorem.</td>
+                            <td class="delete-op">
+                                <button class="fa fa-trash btn-eliminaRegistro fa-2x" ></button>
                             </td>
+
                         </tr>
-                        <tr>
-                            <td>Set Reyes Sandoval</td>
-                            <td>Frontend Developer</td>
-                            <td>Laura Gomez</td>
-                            <td>Entrevistado</td>
-                            <td>29/08/2022</td>
-                            <td>
-                                <button class="fa fa-trash btn-eliminaRegistro fa-2x" ></button> 
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
+            </table>
+</div>
+
+<script src="https://kit.fontawesome.com/c36077751b.js" crossorigin="anonymous"></script>
+<script src="./js/CargaRH.js"></script>
             </div>
         </section>
     </main>
