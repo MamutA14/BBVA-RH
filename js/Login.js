@@ -9,17 +9,17 @@ document.getElementById("btn-ingresar").addEventListener("click", (e)=>{
             case "superUsuario":
             case "superUsuario@elbanco.com":
                 alert("existe");
-                document.getElementById("id-formulario").setAttribute("action","/DesktopSuperUsuario.html")
+                document.getElementById("id-formulario").setAttribute("action","/SuperU.html")
                 break;
             case "recursosHumanos":
             case "recursosHumanos@elbanco.com":
                 alert("existe");
-                document.getElementById("id-formulario").setAttribute("action","/DesktopRH.html")
+                document.getElementById("id-formulario").setAttribute("action","/RecursosH.html")
                 break;
             case "entrevistador":
             case "entrevistador@elbanco.com":
                 alert("existe");
-                document.getElementById("id-formulario").setAttribute("action","/DesktopEntrevistador.html")
+                document.getElementById("id-formulario").setAttribute("action","/Entrevistador.html")
                 break;
             default:
                 alert("No existe el usuario o la contraseña es incorrecta");

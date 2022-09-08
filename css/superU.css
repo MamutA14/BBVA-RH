@@ -1,0 +1,180 @@
+body {
+    margin: 0;
+	padding: 0;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+	font-size: 1em;
+	line-height: 1.5em;
+}
+header{
+    background: #006ec1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 85px;
+    width: auto;
+}
+
+section{
+    width: 100%;
+    align-items: center;
+    margin: 0 50px;
+}
+
+.titulo {
+    width: 100%;
+    height: 115px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tabla table{
+    width: 100%;
+}
+
+tbody tr{
+    height: 50px;
+}
+
+th {
+    text-align: start;
+}
+
+td button{
+    text-align: center;
+    width: 142px;
+    height: 29px;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.buscar{
+    display: flex;
+    background-color: #DADADA;
+    border-radius: 20px;
+    width: 421px;
+}
+
+.buscar input {
+    border: 0;
+    background-color: #DADADA;
+    width: 255px;
+}
+
+.img-logo{
+    padding-left: 34px;
+}
+
+#bell-button{
+    border: 0;
+    background-color: #006ec1;
+    height: 38px;
+    width: 35px;
+    margin: 25px;
+}
+
+.fa-bell{
+    color: white;
+}
+
+main{
+    display: flex;
+    height: auto;
+    width: auto;
+}
+
+.nav{
+    display: flex;
+    flex-direction: column;
+    background: #2C93E0;
+    width: 15em;
+    height: 35.7em;
+    float: left;
+    margin-left: -.5%;
+    color: white;
+}
+
+.cabeza-nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0;
+    flex-direction: column;
+    align-content: center;
+}
+#user-pic{
+    width: 40%;
+    align-items: center;
+}
+.Bienvenida{
+    display: flex;
+    font-size: 19px;
+    margin-bottom: 1px;
+}
+.rol{
+    margin-top: unset;
+    font-size: 14px;
+}
+
+button {
+    margin-top: 8px;
+    background-color: #0F74BE;
+    color: white;
+    font-weight: 700;
+    border: 0;
+    width: 100%;
+    height: 4em;
+    cursor: pointer;
+    text-align: start;
+}
+
+
+#bars-button{
+    display: none;
+}
+
+button span {
+    padding-left: 24px;
+}
+
+button:hover{
+    background-color: #0F74BE; 
+}
+
+@media (max-width:600px) {
+    main{
+        margin: 0 15px;
+    }
+    .nav{
+        display: none;
+    }
+    .iconos{
+        display: flex;
+    }
+    #bars-button{
+        display: block;
+        background-color: #006ec1;
+        height: 38px;
+        width: 35px;
+        margin: 25px;
+    }
+    .titulo{
+        display: block;
+    }
+    .buscar{
+        align-items: center;
+        width: auto;
+        height: 40px;
+    }
+    section{
+        margin: 0 0;
+    }
+    header{
+        text-align: start;
+    }
+    .tabla{
+        width: auto;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+}

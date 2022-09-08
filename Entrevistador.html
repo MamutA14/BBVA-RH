@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/estilos.css">
+    <title>Recursos Humanos</title>
+</head>
+<body>
+    <header>
+        <img class="img-logo" src="resources/img/bbva-logo.png" alt="BBVA" srcset="" width="138" height="43">
+        <div class="iconos">
+            <button id="bell-button"><i class="fa-solid fa-bell fa-2x"></i></button>
+            <button id="bars-button"><i class="fa-solid fa-bars fa-2x"></i></button>
+        </div>
+    </header>
+    <main>
+        <div class="nav">
+            <div class="options-nav">
+                <div class="cabeza-nav">
+                    <img src="resources/icons/person-circle.svg" id="user-pic" alt="FOTO PERFIL">
+                    <p class="Bienvenida">¡Bienvenido Alam!</p>
+                    <p class="rol">Entrevistador</p>
+                </div>
+            </div>
+            <button id="id-candidatos"><span>Lista de candidatos</span></button>
+            <button id="id-opciones"><span>Opciones</span></button>
+        </div>
+        <section>
+            <div class="titulo">
+                <h1>Candidatos</h1>
+                <div class="buscar">
+                    <i class="fa fa-search" style="color: white; margin: 5px 3px 5px 10px;" aria-hidden="true"></i>
+                    <input type="search" id="search" placeholder="Buscar candidato...">
+                </div>
+            </div>
+            <div class="tabla">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Nombre <i class="fa-sharp fa-solid fa-caret-down"></i></th>
+                            <th>Posicion <i class="fa-sharp fa-solid fa-caret-down"></i></th>
+                            <th>Registro <i class="fa-sharp fa-solid fa-caret-down"></i></th>
+                            <th>Estatus <i class="fa-sharp fa-solid fa-caret-down"></i></th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Alan Josue Lopez Lopez</td>
+                            <td>Frontend Developer</td>
+                            <td>22/08/2022</td>
+                            <td>Por revisar</td>
+                            <td class="opcion"><button><i class="fa-solid fa-eye"></i> Ver Perfil</button></td>
+                        </tr>
+                        <tr>
+                            <td>Jorge Aguilar Hernandez</td>
+                            <td>Frontend Developer</td>
+                            <td>25/08/2022</td>
+                            <td>Por revisar</td>
+                            <td class="opcion"><button><i class="fa-solid fa-eye"></i> Ver Perfil</button></td>
+                        </tr>
+                        <tr>
+                            <td>Set Reyes Sandoval</td>
+                            <td>Frontend Developer</td>
+                            <td>20/08/2022</td>
+                            <td>En revision</td>
+                            <td class="opcion"><button><i class="fa-solid fa-pen"></i> Editar</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+        <div>
+
+        </div>
+    </main>
+    <script src="https://kit.fontawesome.com/c36077751b.js" crossorigin="anonymous"></script>
+</body>
+</html>
