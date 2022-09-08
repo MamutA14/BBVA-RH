@@ -14,88 +14,60 @@ function CargaAdmin(){
     $contenido.innerHTML = null;
     if ($admin.value === "opt-dashboard") {
         $contenido.innerHTML = `
-        <div class="dashboard">
-                <h1>Vista General</h1>
-                <div id="intern-buscador">
-                    <div>
-                        <a href="" class="agregar-op"><button><img src="resources/icons/user-add.svg" alt=""> Agregar</button></a>
-                    </div>
-                    <div>
-                        <form action=""  method="get" class="finder">
-                            <img src="resources/icons/find.svg" alt="">
-                            <input type="search" name="" id="" placeholder="Buscar Candidato">
-                        </form>
-                    </div>
-                </div>
-            
-                <div id="table">
-                    <table class="table">
-                        <tr>
-                            <th>RH <i class="fa-sharp fa-solid fa-caret-down"></i></th>
-                            <th>Fecha <i class="fa-sharp fa-solid fa-caret-down"></i></th>
-                            <th>Nombre <i class="fa-sharp fa-solid fa-caret-down"></i></th>
-                            <th>Especialidad <i class="fa-sharp fa-solid fa-caret-down"></i></th>
-                            <th>Experiencia <i class="fa-sharp fa-solid fa-caret-down"></i></th>
-                            <th>Encargado <i class="fa-sharp fa-solid fa-caret-down"></i></th>
-                            <th>CV <i class="fa-sharp fa-solid fa-caret-down"></i></th>
-                            <th>Opciones</th>
-                        </tr>
-                        <tr class="content-table">
-                            <td>Lorem, ipsum.</td>
-                            <td>Lorem, ipsum.</td>
-                            <td>Lorem, ipsum.</td>
-                            <td>Lorem, ipsum.</td>
-                            <td>Lorem, ipsum.</td>
-                            <td>Lorem, ipsum.</td>
-                            <td>Lorem, ipsum.</td>
-                            <td>
-                                <select name="" id="opciones-op">
-                                    <option value="">Seleccione</option>
-                                    <option value="">opcion 1</option>
-                                    <option value="">opcion 2</option>
-                                </select>
-                            </td>
-                        </tr>
-                        <tr class="content-table">
-                            <td>Lorem, ipsum.</td>
-                            <td>Lorem, ipsum.</td>
-                            <td>Lorem, ipsum.</td>
-                            <td>Lorem, ipsum.</td>
-                            <td>Lorem, ipsum.</td>
-                            <td>Lorem, ipsum.</td>
-                            <td>Lorem, ipsum.</td>
-                            <td>
-                                <select name="" id="opciones-op">
-                                    <option value="">Seleccione</option>
-                                    <option value="">opcion 1</option>
-                                    <option value="">opcion 2</option>
-                                </select>
-                            </td>
-                        </tr>
-                        <tr class="content-table">
-                            <td>Lorem, ipsum.</td>
-                            <td>Lorem, ipsum.</td>
-                            <td>Lorem, ipsum.</td>
-                            <td>Lorem, ipsum.</td>
-                            <td>Lorem, ipsum.</td>
-                            <td>Lorem, ipsum.</td>
-                            <td>Lorem, ipsum.</td>
-                            <td>
-                                <select name="" id="opciones-op">
-                                    <option value="">Seleccione</option>
-                                    <option value="">opcion 1</option>
-                                    <option value="">opcion 2</option>
-                                </select>
-                            </td>
-                        </tr>
-                        
-                    </table>
-                </div>
+        <link rel="stylesheet" href="css/listDashBoard.css">
+<div class="dashboard">
+    <div id="extern-buscador">
+        <h1>Vista General</h1>
+        <div id="intern-buscador">
+            <div>
+                <a href="" class="agregar-op"><button><img src="resources/icons/user-add.svg" alt=""> Agregar</button></a>
             </div>
+                <form action=""  method="get" class="finder">
+                    <i class="fa fa-search" style="color: white; margin: 5px 3px 5px 10px;" aria-hidden="true"></i>
+                    <input type="search" name="" id="" placeholder="Buscar Candidato">
+                </form>
+            
+        </div>
+    </div>
+    
+
+    <div id="table">
+        <table>
+            <tr>
+                <th>RH<i class="fa-sharp fa-solid fa-caret-down"></i></th>
+                <th>Fecha<i class="fa-sharp fa-solid fa-caret-down"></i></th>
+                <th>Nombre<i class="fa-sharp fa-solid fa-caret-down"></i></th>
+                <th>Especialidad<i class="fa-sharp fa-solid fa-caret-down"></i></th>
+                <th>Experiencia<i class="fa-sharp fa-solid fa-caret-down"></i></th>
+                <th>Encargado<i class="fa-sharp fa-solid fa-caret-down"></i></th>
+                <th>CV<i class="fa-sharp fa-solid fa-caret-down"></i></th>
+                <th>Opciones<i class="fa-sharp fa-solid fa-caret-down"></i></th>
+            </tr>
+            <tr class="content-table">
+                <td>Lorem, ipsum.</td>
+                <td>Lorem, ipsum.</td>
+                <td>Lorem, ipsum.</td>
+                <td>Lorem, ipsum.</td>
+                <td>Lorem, ipsum.</td>
+                <td>Lorem, ipsum.</td>
+                <td>Lorem, ipsum.</td>
+                <td>
+                    <select name="" id="opciones-op">
+                        <option value="">Opciones</option>
+                        <option value="">opcion 1</option>
+                        <option value="">opcion 2</option>
+                    </select>
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>
+
+<script src="https://kit.fontawesome.com/c36077751b.js" crossorigin="anonymous"></script>
+<script src="./js/CargaRH.js"></script>
         `;
     } else if($admin.value === "opt-graficos"){
-        $contenido.innerHTML = `
-        <link rel="stylesheet" href="css/graficas.css">
+        $contenido.innerHTML = `<link rel="stylesheet" href="css/graficas.css">
         <div class="title-gr">
             <h1>Gráficos</h1>
         </div>
@@ -104,7 +76,7 @@ function CargaAdmin(){
             <div class="circular">
                 <p id="title-circ">Cantidad</p>
                 <div class="piechart">piechart</div>
-                <ul class="ul">
+                <ul id="circ-ul">
                     <li id="orange-box"> <p class="text-pie"> 1er resultado</p></li>
                     <li id="blue-box">  <p class="text-pie">2do resultado</p></li>
                     <li id="gray-box"> <p class="text-pie">3er resultado</p> </li>
@@ -112,7 +84,7 @@ function CargaAdmin(){
             </div>
             
             
-        <div class="board">
+           <div class="board">
                 <div class="titulo_grafica">
                     <h3 class="t_grafica">Resultados recientes</h3>
                 </div>
@@ -165,9 +137,9 @@ function CargaAdmin(){
                                 <div>10</div>
                             </div>
                         </div>
-                </div> 
+                   </div> 
                     <div class="sep_board"></div>
-            </div>    
+               </div>    
             </div>
         </div>
         `;

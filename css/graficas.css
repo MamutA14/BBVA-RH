@@ -227,6 +227,16 @@ color: transparent;
     color: #666666;
     
 }
+#circ-ul{
+    display: flex;
+    margin-left: 20%;
+    font-size: 1%;
+    padding-left: 0%    ;
+    font-size: 50%;
+}
+#circ-ul li{
+    margin-left: 5%;
+}
 
 @media(max-width: 760px) {
 
@@ -255,9 +265,10 @@ color: transparent;
     }   
 
     
-    .circular ul{
-        margin-right: 5%;
-        font-size: 1%;
-        padding-left: 0%    ;
+    #circ-ul{
+        display: flex;
+        justify-content: center;
+        font-size: 5%;
+        margin-left: auto;
     }
 }
