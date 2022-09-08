@@ -39,3 +39,26 @@ button:hover{
     background-color: unset;
 }
 
+.fa-trash{
+    color: red;
+}
+@media(max-width: 1024px){
+    .not-responsive{
+        display: none;
+    }
+    #intern-buscador{
+        display: flex;
+        flex-direction: column;
+    }
+    .finder{
+        width: 75%;
+        height: 50px;
+
+    }
+
+    .finder input{
+        margin-left: 20px;
+    }
+
+    
+}

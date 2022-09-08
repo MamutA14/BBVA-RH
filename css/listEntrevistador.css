@@ -64,3 +64,27 @@ button:hover{
     height: 25px;
     
 }
+
+@media(max-width: 1024px){
+    .not-responsive{
+        display: none;
+    }
+     .finder{
+        width: 75%;
+        height: 50px;
+
+
+    }
+    .finder input{
+        margin-left: 20px;
+    }
+    #intern-buscador{
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    .candidatos{
+        display: flex;
+        
+    }
+}

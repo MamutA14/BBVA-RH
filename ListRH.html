@@ -4,44 +4,47 @@
     <h1>Candidatos</h1>
     <form action="" method="get">
         <div class="finder">
-            <img src="resources/icons/find.svg" alt="img">
+            <i class="fa fa-search" style="color: white; margin: 5px 3px 5px 10px;" aria-hidden="true"></i>
             <input type="search"  id="search" placeholder="Buscar candidato...">
 
         </div>
         
     </form>
 </div>
-<div>
+<div class="candidatos-content">
 
     <table id="candidatos" >
         <tr>
-            <th>Nombre</th>
-            <th>Posicion</th>
-            <th>Entrevistador</th>
-            <th>Estatus</th>
-            <th>Fecha Entrevista</th>
+            <th>Nombre<i class="fa-sharp fa-solid fa-caret-down"></i></th>
+            <th>Posicion<i class="fa-sharp fa-solid fa-caret-down"></i></th>
+            <th class="not-responsive">Entrevistador<i class="fa-sharp fa-solid fa-caret-down"></i></th>
+            <th class="not-responsive">Estatus<i class="fa-sharp fa-solid fa-caret-down"></i></th>
+            <th class="not-responsive">Fecha Entrevista<i class="fa-sharp fa-solid fa-caret-down"></i></th>
             <th></th>
         </tr>
         <tr>
             <td>Lorem ipsum dolor sit amet consectetur.</td>
             <td>Lorem, ipsum.</td>
-            <td>Lorem ipsum dolor sit.</td>
-            <td>Lorem, ipsum dolor.</td>
-            <td>Lorem.</td>
-            <td class="delete-op"><button>
-                <img  class = "trash-icon" src="resources/icons/trash.svg" alt="trash">
-            </button> </td>
+            <td class="not-responsive">Lorem ipsum dolor sit.</td>
+            <td class="not-responsive">Lorem, ipsum dolor.</td>
+            <td class="not-responsive">Lorem.</td>
+            <td class="delete-op">
+                <button class="fa fa-trash btn-eliminaRegistro fa-2x" ></button>
+            </td>
         </tr>
         <tr>
             <td>Lorem ipsum dolor sit amet consectetur.</td>
             <td>Lorem, ipsum.</td>
-            <td>Lorem ipsum dolor sit.</td>
-            <td>Lorem, ipsum dolor.</td>
-            <td>Lorem.</td>
-            <td class="delete-op"><button>
-                <img  class = "trash-icon" src="resources/icons/trash.svg" alt="trash">
-            </button> </td>
+            <td class="not-responsive">Lorem ipsum dolor sit.</td>
+            <td class="not-responsive">Lorem, ipsum dolor.</td>
+            <td class="not-responsive">Lorem.</td>
+            <td class="delete-op">
+                <button class="fa fa-trash btn-eliminaRegistro fa-2x" ></button>
+             </td>
 
         </tr>
     </table>
 </div>
+
+<script src="https://kit.fontawesome.com/c36077751b.js" crossorigin="anonymous"></script>
+<script src="./js/CargaRH.js"></script>
