@@ -8,14 +8,15 @@ header{
 
 .cabeza-nav{
     display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0;
     flex-direction: column;
     align-content: center;
 }
 #user-pic{
     width: 40%;
     align-items: center;
-    margin-left: 20%;
-    margin-top: 10%;
 }
 img.mediana{
     width: 100px;
@@ -40,18 +41,14 @@ button img:hover{
 }
 
 .Bienvenida{
-    font-size: small;
     display: flex;
     margin-bottom: 1px;
-    margin-left: 10%;
-    
 }
 
 
 .rol{
     margin-top: unset;
     font-size:x-small;
-    margin-left: 15%;
 }
 main{
     display: flex;
