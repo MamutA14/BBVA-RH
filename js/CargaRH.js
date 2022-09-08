@@ -89,12 +89,12 @@ function CargaDatos(){
                 <label for="">Fecha de entrevista</label>
                 <input type="date" placeholder="Fecha de entrevista">            
             </div>
-            <div class="option" >
-                <a ><button>Curriculum vitae</button></a>
-            <div id="sub">
-                    <input type="button" value="Guardar">
-            </div> 
+            <div class="btn-cv">
+                <button>Curriculum vitae</button>    
             </div>
+            <div class="btn-guardar">
+                <button>Guardar</button>
+            </div> 
         </form>
 </div>
 `;
