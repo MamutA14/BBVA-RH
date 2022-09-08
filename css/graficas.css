@@ -192,7 +192,7 @@ color: transparent;
     font-weight: bold;
 }
 
-ul{
+.ul{
     display: flex;
     font-size: x-small;
     color:#666666;
