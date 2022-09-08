@@ -158,3 +158,40 @@ input[type=password], select {
 
 }
 
+@media (max-width:768px) {
+   
+    #menu-login{
+        width: 75%;
+    }
+    
+ }
+
+ @media (max-width:480px) {
+    #menu-login{
+        width: 90%;
+        margin: auto;
+        
+        
+    }
+    #hero{
+        display: inline-block;
+    }
+
+    #attention-img img{
+        margin: 10px 0;
+        width: 80%;
+        height: 200px;
+        margin-left: 15%;
+        align-content: center;
+        
+    }
+    
+
+    button{
+        width: 59%;
+        margin-top: 10;
+      }
+    
+ }
+
+

@@ -13,29 +13,69 @@ form{
     margin-left: 50px;
     margin-top: 1em;
 }
+/*.option input{
+    height: 48px;
+}*/
 
 input[type=text],
 input[type=date]{
-    height: 2.5em;
+    height: 48px;
     border-radius: 5px;
 }
-/* button,input[type=button]{
+
+input[type=date]{
+    width: 300px;
+    background-color: transparent;
+    border-top-width: 2px;
+
+    border-color: black;
+}
+
+button,input[type=button]{
     background-color: #006EC1;
     border: 1px solid #006EC1;
     margin: 5px;
     border-radius: 5px;
     color: white;
 
-    height:25px;
-    width: 50%;
+
 
 }
 
-input[type=button]{
+
+#cv-button{
+    height:48px;
+    width: 140px;
+}
+#submit-button{
+    height: 48px;
+    width: 84px;
+}
+/*input[type=button]{
     height: 50px;
     width: 25%;
 } */ 
 #sub{
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
+}
+
+@media(max-width: 1024px) {
+
+    #title-formRH{
+        display: flex;
+        justify-content: center;
+    }
+    /*#formRH{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }*/
+    form{
+        align-items: center;
+    }
+    .option{
+        margin-bottom: 5%;
+    }
+    
 }
