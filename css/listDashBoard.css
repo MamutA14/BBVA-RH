@@ -87,3 +87,26 @@ a:hover{
     display: flex;
     justify-content: space-between;
 }*/
+
+@media(max-width: 1024px){
+    #table,.agregar-op{
+        display: none;
+    }
+    #intern-buscador{
+        flex-direction: row-reverse;
+    }
+    #extern-buscador{
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    .finder{
+        width: 75%;
+        height: 50px;
+        /*display: flex;
+        justify-content: space-around;*/
+
+    }
+    .finder input{
+        margin-left: 20px;
+    }
+}
