@@ -19,7 +19,7 @@ form{
 
 input[type=text],
 input[type=date]{
-    height: 48px;
+    height: 35px;
     border-radius: 5px;
 }
 
@@ -43,6 +43,7 @@ input[type=date]{
 }
 
 .btn-guardar{
+    margin-top: 30px;
     width: fit-content;
     margin-left: 50px;
     width: 140px;
@@ -53,7 +54,7 @@ button{
     border: 1px solid #006EC1;
     border-radius: 5px;
     color: white;
-    height: 48px;
+    height: 35px;
 }
 
 
