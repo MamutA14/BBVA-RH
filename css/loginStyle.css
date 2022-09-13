@@ -54,7 +54,7 @@ main{
     display: inline;
 }
 button {
-    width: 74%;
+    width: auto;
     display: inline-block;
     background-color: #89D1F3;
     color: white;
@@ -188,7 +188,7 @@ input[type=password], select {
     
 
     button{
-        width: 50%;
+        width: auto;
         margin-top: 10;
       }
     
