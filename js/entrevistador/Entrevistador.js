@@ -1,10 +1,7 @@
 const $candidatos = document.getElementById("id-candidatos");
 const $opciones = document.getElementById("id-opciones");
 const $cerrarSesion = document.getElementById("salir");
-
 const $btnMenu = document.getElementById("bars-button");
-
-
 
 $candidatos.removeEventListener("click", CargaCandidatos);
 $opciones.removeEventListener("click", CargaDatos);
@@ -16,12 +13,19 @@ $opciones.addEventListener("click", CargaDatos);
 $cerrarSesion.addEventListener("click", CerrarSesion);
 $btnMenu.addEventListener("click", Animacion);
 
-function Animacion() {
- const $nav = document.getElementById("id-nav");
- $nav.classList.remove("nav")
- $nav.classList.add("showNav");
- document.getElementById("id-cortina").classList.add("mostrar");
- document.getElementById("id-cortina").classList.add("muestraCortina");
+function Animacion(e) {
+ const $nav = document.getElementById("id-nav"); 
+ if (document.getElementById("id-cortina").className === "") {
+  $nav.classList.remove("nav")
+  $nav.classList.add("showNav");
+  document.getElementById("id-cortina").classList.add("mostrar");
+  document.getElementById("id-cortina").classList.add("muestraCortina");
+ } else {
+  $nav.classList.add("nav")
+  $nav.classList.remove("showNav");
+  document.getElementById("id-cortina").classList.remove("mostrar");
+  document.getElementById("id-cortina").classList.remove("muestraCortina");
+ }
 }
 
 function CargaCandidatos(){
