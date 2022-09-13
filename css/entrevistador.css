@@ -160,6 +160,52 @@ button span {
 button:hover{
     background-color: #0F74BE; 
 }
+ 
+/* estilos del formulario */
+.option {
+ display: flex;
+ flex-direction: column;
+ width: 688px;
+ height: 81px;
+}
+.option input, select{
+ height: 50%;
+}
+
+.formulario {
+ width: 688px;
+}
+
+.btn-subir{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding-top: 30px;
+}
+
+.radio{
+ padding-top: 10px;
+}
+
+#subir{
+    display: inline-block;
+    line-height: 1.5;
+    color: #212529;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    background-color: transparent;
+    padding: 0.375rem 0.75rem;
+    border-radius: 0.25rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    color: white;
+    background-color: #006ec1;
+    border: solid #006ec1;
+}
 
 @media (max-width:1000px) {
  .tabla{
@@ -195,6 +241,12 @@ button:hover{
     height: 100vh;
     background-color: #000000;
 } */
+  .formulario{
+   width: auto;
+  }
+  .option {
+   width: auto;
+  }
 }
 
 @media (max-width:600px) {
@@ -249,4 +301,10 @@ button:hover{
     height: 100vh;
     background-color: #000000;
 } */
+  .formulario{
+   width: auto;
+  }
+  .option{
+   width: auto;
+  }
 }

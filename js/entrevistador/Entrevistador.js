@@ -64,51 +64,47 @@ function CargaDatos(){
     const $contenido = document.getElementById("id-contenido");
     $contenido.innerHTML = null;
     $contenido.innerHTML = `
-        <div class="title-candidato">
-            <h1>Vacante > Candidato</h1>
-        </div>
-        
-        <div class="edit-page">
-            <form action="" method="post">
-                <div class="option" id="experiencia">
-                    <label>Experiencia</label>
-                    <input type="text" placeholder="Experiencia laboral">
-                </div>
-                <div class="option" id="tec">
-                    <label for="">Tecnologias</label>
-                    <input type="text" placeholder="Tecnologias y Experiencia">
-                </div>
-                <div class="option" id="nivel">
-                    <label for="">Nivel del Candidato</label>
-                    <select name="" id="">
-                        <option value="" selected>Seleciona un nivel</option>
-                        <option value="">Junior</option>
-                        <option value="">Semi Senior</option>
-                        <option value="">Senior</option>
-                    </select>
-                </div>
-                <div class="option" id="cumple">
-                    <label for="">¿Cumple con la vacante?</label>
-                    <div class="radio">
-                        <label for="">Si</label>
-                    <input type="radio" name="cumple" id="">
-                    <label for="">No</label>
-                    <input type="radio" name="cumple" id="">
-                    </div>
-                    
-                </div>
-                <div class="option" id="observaciones">
-                    <label for="">Observaciones</label><br>
-                <textarea name="" id="" cols="30" rows="10"></textarea><br>
-                </div>
-                <div class="option" id="button">
-                    <input type="submit" value="Subir Resultados">
-                </div>
-                
-
-            </form>
-        </div>
+    <div class="title-candidato">
+     <h2>Frontend Developer - Alán Josue López </h2>
+    </div> 
+    <div class="formulario">
+     <form action="" method="post">
+      <div class="option" id="experiencia">
+       <label>Experiencia</label>
+       <input type="text" placeholder="Experiencia laboral">
+      </div>
+      <div class="option" id="tec">
+       <label for="">Tecnologias</label>
+       <input type="text" placeholder="Tecnologias y Experiencia">
+      </div>
+      <div class="option" id="nivel">
+       <label for="">Nivel del Candidato</label>
+       <select name="" id="">
+        <option value="" selected>Seleciona un nivel</option>
+        <option value="">Junior</option>
+        <option value="">Semi Senior</option>
+        <option value="">Senior</option>
+       </select>
+      </div>
+      <div class="option" id="cumple">
+       <label for="">¿Cumple con la vacante?</label>
+       <div class="radio">
+        <input type="radio" name="cumple" id="">
+        <label for="">Si</label>
+        <input type="radio" name="cumple" id="">
+        <label for="">No</label>
+       </div>              
+      </div>
+      <div class="option">
+       <label for="">Observaciones</label>
+       <textarea rows="10"></textarea>
+      </div>
+      <div class="btn-subir">
+       <input id="subir" type="submit" value="Subir Resultados">
+      </div>
+     </form>
     </div>
+   </div>
     `;
 }
 
