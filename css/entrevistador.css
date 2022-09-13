@@ -161,6 +161,27 @@ button:hover{
     background-color: #0F74BE; 
 }
 
+@media (max-width:1000px) {
+ .tabla{
+   width: auto;
+   overflow-x: auto;
+   white-space: nowrap;
+  }
+  .nav{
+   display: none;
+  }
+  .iconos{
+   display: flex;
+  }
+  #bars-button{
+   display: block;
+   background-color: #006ec1;
+   height: 38px;
+   width: 35px;
+   margin: 25px;
+  }
+}
+
 @media (max-width:600px) {
     main{
         margin: 0 15px;
