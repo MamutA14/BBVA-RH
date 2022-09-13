@@ -54,7 +54,7 @@ main{
     display: inline;
 }
 button {
-    width: 74%;
+    width: auto;
     display: inline-block;
     background-color: #89D1F3;
     color: white;
@@ -177,18 +177,22 @@ input[type=password], select {
         display: inline-block;
     }
 
+    #attention-img{
+     display: flex;
+     justify-content: center;
+    }
+
     #attention-img img{
         margin: 10px 0;
-        width: 80%;
+        width: 50%;
         height: 200px;
-        margin-left: 15%;
         align-content: center;
         
     }
     
 
     button{
-        width: 50%;
+        width: auto;
         margin-top: 10;
       }
     
