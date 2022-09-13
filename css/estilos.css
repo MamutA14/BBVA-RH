@@ -41,6 +41,7 @@ section{
 tbody tr{
     background-color: #DADADA;
     height: 50px;
+    font-size: 300;
 }
 
 tbody td{
