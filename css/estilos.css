@@ -91,8 +91,7 @@ td button{
 
 main{
     display: flex;
-    height: auto;
-    width: auto;
+    height: 91.2vh;
 }
 
 .nav{
@@ -100,7 +99,7 @@ main{
     flex-direction: column;
     background: #2C93E0;
     width: 15em;
-    height: 35.7em;
+    height: 100%;
     float: left;
     margin-left: -.5%;
     color: white;
