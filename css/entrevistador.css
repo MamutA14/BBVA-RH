@@ -1,7 +1,7 @@
 body {
     margin: 0;
 	padding: 0;
-	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+	font-family: 'Arial Narrow', Arial, sans-serif; 
 	font-size: 1em;
 	line-height: 1.5em;
 }
@@ -30,6 +30,8 @@ section{
 
 .tabla table{
     width: 100%;
+    border-collapse: collapse;
+    border-spacing: 2px;
 }
 
 .opcion{
@@ -39,13 +41,14 @@ section{
 }
 
 tbody tr{
-    background-color: #DADADA;
+    background-color: #EEEEEE  ;
     height: 50px;
     font-size: 300;
 }
 
 tbody td{
-    text-align: center;
+    border-width: 0;
+    border-bottom: solid white;
 }
 
 th {
