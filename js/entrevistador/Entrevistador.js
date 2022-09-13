@@ -1,0 +1,1 @@
+ const $candidatos = document.getElementById
