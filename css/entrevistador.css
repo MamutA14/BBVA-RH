@@ -207,6 +207,30 @@ button:hover{
     border: solid #006ec1;
 }
 
+.showNav{
+ display: flex;
+ flex-direction: column;
+ background: #2C93E0;
+ width: 15em;
+ height: 100%;
+ color: white; 
+ position: absolute;
+ right: 0;
+}
+
+.mostrar {
+ opacity: .5;
+}
+
+.muestraCortina {
+  position: fixed;
+  right: 240px;
+  z-index: 1040;
+  width: 100vw;
+  height: 100vh;
+  background-color: #000000;
+}
+
 @media (max-width:1000px) {
  .tabla{
    width: auto;
@@ -216,10 +240,7 @@ button:hover{
   .nav {
    display: none;
   }
-  /* .nav{
-   position: absolute;
-   right: 0;
-  } */
+
   .iconos{
    display: flex;
   }
@@ -230,17 +251,7 @@ button:hover{
    width: 35px;
    margin: 25px;
   }
-  /* .show {
-   opacity: .5;
-  }
-  .cortina {
-    position: fixed;
-    right: 240px;
-    z-index: 1040;
-    width: 100vw;
-    height: 100vh;
-    background-color: #000000;
-} */
+  
   .formulario{
    width: auto;
   }
@@ -285,22 +296,6 @@ button:hover{
         overflow-x: auto;
         white-space: nowrap;
     }
-/* 
-    .nav{
-   position: absolute;
-   right: 0;
-  }
-    .show {
-   opacity: .5;
-  }
-  .cortina {
-    position: fixed;
-    right: 240px;
-    z-index: 1040;
-    width: 100vw;
-    height: 100vh;
-    background-color: #000000;
-} */
   .formulario{
    width: auto;
   }

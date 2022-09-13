@@ -2,13 +2,27 @@ const $candidatos = document.getElementById("id-candidatos");
 const $opciones = document.getElementById("id-opciones");
 const $cerrarSesion = document.getElementById("salir");
 
+const $btnMenu = document.getElementById("bars-button");
+
+
+
 $candidatos.removeEventListener("click", CargaCandidatos);
 $opciones.removeEventListener("click", CargaDatos);
 $cerrarSesion.removeEventListener("click", CerrarSesion);
+$btnMenu.removeEventListener("click", Animacion);
 
 $candidatos.addEventListener("click", CargaCandidatos);
 $opciones.addEventListener("click", CargaDatos);
 $cerrarSesion.addEventListener("click", CerrarSesion);
+$btnMenu.addEventListener("click", Animacion);
+
+function Animacion() {
+ const $nav = document.getElementById("id-nav");
+ $nav.classList.remove("nav")
+ $nav.classList.add("showNav");
+ document.getElementById("id-cortina").classList.add("mostrar");
+ document.getElementById("id-cortina").classList.add("muestraCortina");
+}
 
 function CargaCandidatos(){
     const $contenido = document.getElementById("id-contenido");
