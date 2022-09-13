@@ -177,11 +177,15 @@ input[type=password], select {
         display: inline-block;
     }
 
+    #attention-img{
+     display: flex;
+     justify-content: center;
+    }
+
     #attention-img img{
         margin: 10px 0;
-        width: 80%;
+        width: 50%;
         height: 200px;
-        margin-left: 15%;
         align-content: center;
         
     }
