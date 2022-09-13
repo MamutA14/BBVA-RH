@@ -95,7 +95,7 @@ td button{
 
 main{
     display: flex;
-    height: 91.2vh;
+    height: 92.1vh;
 }
 
 .nav{
@@ -105,8 +105,14 @@ main{
     width: 15em;
     height: 100%;
     float: left;
-    margin-left: -.5%;
-    color: white;
+    color: white; 
+}
+
+.botones {
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
 
 .cabeza-nav{
