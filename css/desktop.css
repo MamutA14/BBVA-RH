@@ -1,0 +1,228 @@
+body{
+    
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;  
+}
+header{
+    background: #006ec1;
+    color: white;
+    top: 0%;
+    margin-left: -1%;
+    margin-right: -1%;
+    margin-top: -1%;
+}
+
+.btn-eliminaRegistro{
+    border: 0;
+    background-color: white;
+    color: red;
+}
+
+.cabeza-nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0;
+    flex-direction: column;
+    align-content: center;
+} 
+
+.contenido{
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.en-linea {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2rem;
+    margin-left: 15px;
+    margin-right: 55px;
+}
+
+.input-busqueda {
+    border-radius: 45px 45px 45px 45px;
+    background-color: #DADADA;
+    height: fit-content;
+    width: 350px;
+    margin-right: 25px;
+}
+
+.t-contenido{
+    width: 100%;
+    text-align: start;
+    margin-top: 4rem;
+}
+
+.t-contenido th {
+    text-align: start;
+}
+
+#user-pic{
+    width: 40%;
+    align-items: center;
+}
+img.mediana{
+    width: 100px;
+    height: 30px;
+    margin-left: 15px;
+
+  }
+
+#cabezera-desk{
+    display: flex;
+    justify-content: space-between;
+}  
+
+#cabezera-desk button{
+    background-color: unset;
+    border: none;
+    cursor: pointer;
+    border-radius: 100%;
+    margin-top: 15px;
+}
+
+ul button:hover{
+    background-color: gray; 
+}
+.buttons-header button:hover{
+    background-color: gray; 
+}
+
+
+
+button img:hover{
+    background-color: (0,0,0,0.5); 
+}
+
+.Bienvenida{
+    display: flex;
+    margin-bottom: 1px;
+}
+
+
+.rol{
+    margin-top: unset;
+    font-size:x-small;
+}
+main{
+    display: flex;
+}
+nav{
+    background: #2C93E0;
+    width: 15em;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    float: left;
+    margin-left: -.5%;
+    color: white;
+}
+section{
+    background: white;
+    float: right;
+    left: 15em;
+    width: 75%;
+    position: absolute;
+    
+}
+
+ul{
+    list-style-type: none;
+    padding: 0;
+}
+ul li{
+    margin-top: 5%;
+    color: white;
+    margin-left:0% ;
+}
+ul button{
+    all:unset;
+    cursor: pointer;
+    background-color: #0F74BE;
+    width: 100%;
+    height: 4em;
+    text-align: center;
+}
+
+#hamburger-button{
+    display: none;
+}
+footer{
+    display: none;
+}
+
+@media(max-width: 1024px) {
+    /*main{
+        height: 600px;
+    }*/
+
+    section{
+        position: relative;
+       position: absolute;
+
+        margin-top: 15%;
+        left: 15%;
+    }
+    .buttons-header{
+        display: flex;
+        padding-left: 15%;
+        
+    }
+    #hamburger-button{
+        display: block;
+    }
+
+    .mediana{
+        width: 10%;
+    }
+    .buttons-header button{
+        width: 25%;
+
+    }
+    nav{
+        display: none;
+    }
+   /* nav{
+        float: left;
+        display: block;
+    }*/
+    footer{
+        display: flex;
+        justify-content: space-around;
+        
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        background: #006ec1;
+        border-radius: 10px;
+    }
+    footer button{
+        background-color: unset;
+        border: none;
+        cursor: pointer;
+    }
+    .img-footer{
+        width: 30px;
+    }
+
+    body{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background-color: white;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;  
+    }
+
+    header{
+            color: white;
+            background: #006ec1;
+            position: absolute;
+            width: 100%;
+            left: 0%;
+            
+    }
+    main{
+        height: 500px;
+    }
+}
