@@ -1,91 +1,61 @@
 const $candidatos = document.getElementById("id-candidatos");
 const $opciones = document.getElementById("id-opciones");
+const $cerrarSesion = document.getElementById("salir");
 
 $candidatos.removeEventListener("click", CargaCandidatos);
 $opciones.removeEventListener("click", CargaDatos);
+$cerrarSesion.removeEventListener("click", CerrarSesion);
 
 $candidatos.addEventListener("click", CargaCandidatos);
 $opciones.addEventListener("click", CargaDatos);
+$cerrarSesion.addEventListener("click", CerrarSesion);
 
 function CargaCandidatos(){
     const $contenido = document.getElementById("id-contenido");
     $contenido.innerHTML = null;
     $contenido.innerHTML = `
-    <div id="intern-buscador">
-        <h1>Candidatos</h1>
-        <form action="" method="get">
-            <div class="finder">
-                <img src="resources/icons/find.svg" alt="img">
-                <input type="search"  id="search" placeholder="Buscar candidato...">
-    
-            </div>
-            
-        </form>
+    <div class="titulo">
+     <h1>Candidatos</h1>
+     <div class="buscar">
+      <i class="fa fa-search" style="color: white; margin: 5px 3px 5px 10px;" aria-hidden="true"></i>
+      <input type="search" id="search" placeholder="Buscar candidato...">
+     </div>
     </div>
-    <div>
-    
-        <table id="candidatos" >
-            <tr>
-                <th>Nombre</th>
-                <th>Posicion</th>
-                <th>Registro</th>
-                <th>Estatus</th>
-                <th></th>
-            </tr>
-            <tr>
-                <td>Lorem ipsum dolor sit amet consectetur.</td>
-                <td>Lorem, ipsum.</td>
-                <td>Lorem ipsum dolor sit.</td>
-                <td>Lorem, ipsum dolor.</td>
-                <td>Lorem.</td>
-                <td class="watch-op">
-                    <div class="ver-op">
-                        <button>
-                            <img  class = "icon-op" src="resources/icons/eye.svg" alt="ver">
-                        </button> 
-                        <label for="">Ver perfil</label>
-                    </div>
-    
-                </td>
-            </tr>
-            <tr>
-                <td>Lorem ipsum dolor sit amet consectetur.</td>
-                <td>Lorem, ipsum.</td>
-                <td>Lorem ipsum dolor sit.</td>
-                <td>Lorem, ipsum dolor.</td>
-                <td>Lorem.</td>
-                <td class="watch-op">
-                    <div class="ver-op">
-                        <button>
-                            <img  class = "icon-op" src="resources/icons/eye.svg" alt="ver">
-                            
-                        </button> 
-                        <label for="">Ver perfil</label>
-                        
-                    </div>
-                    
-                </td>
-    
-            </tr>
-    
-            <tr>
-                <td>Lorem ipsum dolor sit amet consectetur.</td>
-                <td>Lorem, ipsum.</td>
-                <td>Lorem ipsum dolor sit.</td>
-                <td>Lorem, ipsum dolor.</td>
-                <td>Lorem.</td>
-                <td class="edit-op">
-                    <div class="ver-op">
-                        <button>
-                            <img  class = "icon-op" src="resources/icons/pencil-fill.svg" alt="ver">
-                        </button> 
-                        <label for="">Editar</label>
-                    </div>
-        
-                </td>
-    
-            </tr>
-        </table>
+    <div class="tabla">
+     <table>
+      <thead>
+       <tr>
+        <th><dd>Nombre<i class="fa-sharp fa-solid fa-caret-down"></i></dd></th>
+        <th>Posición <i class="fa-sharp fa-solid fa-caret-down"></i></th>
+        <th>Registro <i class="fa-sharp fa-solid fa-caret-down"></i></th>
+        <th>Estatus <i class="fa-sharp fa-solid fa-caret-down"></i></th>
+        <th></th>
+       </tr>
+      </thead>
+      <tbody>
+       <tr>
+        <td><dd>Alan Josue Lopez Lopez</dd></td>
+        <td>Frontend Developer</td>
+        <td>22/08/2022</td>
+        <td>Por revisar</td>
+        <td class="opcion"><button><i class="fa-solid fa-eye"></i> Ver Perfil</button></td>
+       </tr>
+       <tr>
+        <td><dd>Jorge Aguilar Hernandez</dd></td>
+        <td>Frontend Developer</td>
+        <td>25/08/2022</td>
+        <td>Por revisar</td>
+        <td class="opcion"><button><i class="fa-solid fa-eye"></i> Ver Perfil</button></td>
+       </tr>
+       <tr>
+        <td><dd>Set Reyes Sandoval</dd></td>
+        <td>Frontend Developer</td>
+        <td>20/08/2022</td>
+        <td>En revision</td>
+        <td class="opcion"><button><i class="fa-solid fa-pen"></i> Editar</button></td>
+       </tr>
+      </tbody>
+     </table>
     </div>
     `;
 }
@@ -94,7 +64,6 @@ function CargaDatos(){
     const $contenido = document.getElementById("id-contenido");
     $contenido.innerHTML = null;
     $contenido.innerHTML = `
-    <link rel="stylesheet" href="css/vacante-editar.css">
         <div class="title-candidato">
             <h1>Vacante > Candidato</h1>
         </div>
@@ -141,4 +110,8 @@ function CargaDatos(){
         </div>
     </div>
     `;
+}
+
+function CerrarSesion() {
+ window.location = "http://127.0.0.1:5500/Login.html";
 }
