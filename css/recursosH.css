@@ -158,7 +158,7 @@ button:hover{
     background-color: #0F74BE; 
 }
 
-@media (max-width:600px) {
+@media (max-width:923px) {
     main{
         margin: 0 15px;
     }
