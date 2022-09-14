@@ -15,6 +15,9 @@ if (user_local != "" &&  pwd_local != "" &&  user_local != null && pwd_local != 
             window.location = "/Entrevistador.html";
             break;    
     }
+    //Extraigo los datos del local y así extraigo el nombre
+    let user_data = JSON.parse(localStorage.getItem('data_user'));
+    document.getElementById('name-user').innerHTML = `¡Bienvenido ${user_data['name']}!`
 }else{
     window.location = "/Login.html";
 }
