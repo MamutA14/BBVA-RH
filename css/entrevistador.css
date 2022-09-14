@@ -127,10 +127,11 @@ main{
     width: 40%;
     align-items: center;
 }
-.Bienvenida{
+.Bienvenida {
     display: flex;
     font-size: 19px;
     margin-bottom: 1px;
+    margin-left: 15px;
 }
 .rol{
     margin-top: unset;
