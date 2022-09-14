@@ -29,8 +29,12 @@ section{
 }
 
 .tabla table{
-    width: 100%;
+   text-align: center;
+    margin: 0px auto;
+    
 }
+
+
 
 tbody tr{
     height: 50px;
