@@ -1,5 +1,24 @@
-//export let email;
-//export let password;
+//redirecciona si ya se ingresaron credenciales correctas
+user_local = localStorage.getItem('user');
+pwd_local = localStorage.getItem('pwd');
+if (user_local != "" &&  pwd_local != "" &&  user_local != null && pwd_local != null ) {
+    switch(user_local && pwd_local){
+        case "Sincere@april.biz":
+        case "92998-3874":
+            window.location = "/SuperU.html";
+            break;
+        case "Shanna@melissa.tv":
+        case "90566-7771":
+            window.location = "/RecursosH.html";
+            break;
+        case "Nathan@yesenia.net":
+        case "59590-4157":
+            window.location = "/Entrevistador.html";
+            break;
+    }
+}
+
+
 document.getElementById("btn-ingresar").addEventListener("click", (e)=>{    
 const API_URL = "https://jsonplaceholder.typicode.com";
 const HTMLResponse = document.querySelector("#app") ;
@@ -18,6 +37,8 @@ if(user === "" || pwd === ""){
             alert("Accede");
             //email = user.value;
             //password = pwd.value;
+            localStorage.setItem('user',user);
+            localStorage.setItem('pwd',pwd);
             switch(user && pwd){
                 case "Sincere@april.biz":
                 case "92998-3874":
@@ -36,6 +57,8 @@ if(user === "" || pwd === ""){
                     break;
                 default:
                     alert("No existe el usuario o la contraseña es incorrecta");
+                    localStorage.setItem('user','');
+                    localStorage.setItem('pwd','');
                     window.location = "/Login.html";
                     break;
             }
@@ -43,6 +66,8 @@ if(user === "" || pwd === ""){
            
        }else{
             alert("No existe el usuario o la contraseña es incorrecta");
+            localStorage.setItem('user','');
+            localStorage.setItem('pwd','');
             window.location = "/Login.html";
            
        }
