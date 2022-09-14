@@ -1,62 +1,13 @@
 
 
-var d =fetch('https://jsonplaceholder.typicode.com/users')
-  .then(response => response.json()).
-  then(json => cargarTabla(json));
+fetch('https://jsonplaceholder.typicode.com/users')
+  .then(response => response.json())
+  .then(json => cargarTabla(json));
 
 
  function cargarTabla(candidatos){
 
-
     const contenido = document.querySelector('.tabla');
-
-    /*let html = `<table>
-    <thead>
-    <tr>
-        <th>Nombre <i class="fa-sharp fa-solid fa-caret-down"></i></th>
-        <th>Posicion <i class="fa-sharp fa-solid fa-caret-down"></i></th>
-        <th>Entrevistador <i class="fa-sharp fa-solid fa-caret-down"></i></th>
-        <th>Estatus <i class="fa-sharp fa-solid fa-caret-down"></i></th>
-        <th>Fecha entrevista <i class="fa-sharp fa-solid fa-caret-down"></i></th>
-        <th></th>
-    </tr>
-</thead>
-<tbody>
-    
-    `;
-
-    candidatos.forEach(element => {
-        //console.log(element.name);
-        const id = element.id;
-        const name = element.username;
-        const company = element.company.name;
-        const entrevistador = element.name;
-        const estatus = element.phone;
-        const fecha = element.address.suite;
-
-
-        html += `
-        <tr>
-        <td>${name}</td>
-        <td>${company}</td>
-        <td>${entrevistador}</td>
-        <td>${estatus}</td>
-        <td>${fecha}</td>
-        <td class="eliminar"><button class="btn-eliminar">
-        <input type="hidden" class="eliminar-dato" value="${id}">
-        <i class="fa-solid fa-trash fa-2x"></i></button></td>
-        </tr>
-
-        `;
-
-    });
-
-    html += `</tbody>
-    </table>`; 
-    contenido.innerHTML = html;
-*/
-    
-
     const buscar = document.querySelector('#search');
 
 const filtrar = () =>{
@@ -126,7 +77,7 @@ const filtrar = () =>{
     filtrar();
     buscar.addEventListener('keyup',filtrar);
 
-  }
+}
 
 
 
