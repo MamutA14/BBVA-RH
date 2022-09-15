@@ -80,7 +80,16 @@ color: #fff;
 
 
 
-
+#opciones{
+    background-color: #2C93E0;
+    border-radius: 25px;
+    width: 100%;
+    color: #fff;
+    font-size: 16px;
+}
+option{
+    border-radius: 25px;
+}
 
 
 section{
@@ -98,6 +107,10 @@ section{
 }
 
 .tabla table{
+    width: 100%;
+}
+
+.tabla-2 table{
     width: 100%;
 }
 
@@ -197,6 +210,10 @@ button {
     text-align: start;
 }
 
+#btn-perfil{
+    border-radius: 25px;
+    width: 100%;
+}
 
 #bars-button{
     display: none;

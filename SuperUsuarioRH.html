@@ -28,13 +28,13 @@
                 <ul class="menu-opciones">
                     <li class="menu1"><i class="fa-solid fa-caret-right"></i>Admin
                         <ul class="menu1">
-                            <li class="menu1"><a href="#">Dashboard</a></li>
+                            <li class="menu1"><a href="SuperU.html">Dashboard</a></li>
                             <li class="menu1"><a href="Graficas.html">Graficos</a></li>
                         </ul>
                     </li>
                     <li class="menu2"><i class="fa-solid fa-caret-right"></i>RH
                         <ul class="menu2">
-                            <li class="menu2"><a href="SuperUsuarioRH.html">Candidatos</a></li>
+                            <li class="menu2"><a href="#">Candidatos</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -45,21 +45,18 @@
                 <h1>Candidatos</h1>
                 <div class="buscar">
                     <i class="fa fa-search" style="color: white; margin: 5px 3px 5px 10px;" aria-hidden="true"></i>
-                    <input type="search" id="search" placeholder="Buscar candidato...">
+                    <input type="search" id="searchRH" placeholder="Buscar candidato...">
                 </div>
             </div>
-            <div class="tabla">
-               <!-- <table>
+            <div class="tabla-2">
+                <!--<table>
                     <thead>
                         <tr>
-                            <th>RH <i class="fa-sharp fa-solid fa-caret-down"></i></th>
-                            <th>Fecha <i class="fa-sharp fa-solid fa-caret-down"></i></th>
                             <th>Nombre <i class="fa-sharp fa-solid fa-caret-down"></i></th>
-                            <th>Especialidad <i class="fa-sharp fa-solid fa-caret-down"></i></th>
-                            <th>Experiencia <i class="fa-sharp fa-solid fa-caret-down"></i></th>
-                            <th>Encargado <i class="fa-sharp fa-solid fa-caret-down"></i></th>
-                            <th>CV <i class="fa-sharp fa-solid fa-caret-down"></i></th>
-                            <th>Opciones <i class="fa-sharp fa-solid fa-caret-down"></i></th>
+                            <th>Posicion <i class="fa-sharp fa-solid fa-caret-down"></i></th>
+                            <th>Registro <i class="fa-sharp fa-solid fa-caret-down"></i></th>
+                            <th>Estatus <i class="fa-sharp fa-solid fa-caret-down"></i></th>
+                            <th> <i class="fa-sharp fa-solid fa-caret-down"></i></th>
                         </tr>
                     </thead>
                     <tbody>
@@ -68,18 +65,9 @@
                             <td>26/08/2022</td>
                             <td>Entrevistado1 Apellido</td>
                             <td>Sistemas TI</td>
-                            <td>3 Años</td>
-                            <td>Usuario1 RH</td>
-                            <td>archivo1.pdf</td>
-                            <td class="opcion">
-                                <select name="Seleccione" id="opciones">
-                                    <option value="" selected>Seleccione</option>
-                                    <option value="">Editar</option>
-                                    <option value="">Eliminar</option>
-                                </select>
-                            </td> 
+                            <td><button  id = "btn-perfil" class="fa-solid fa-eye">  Ver Perfil</button></td>                         
                         </tr>
-                        
+                       
                     </tbody>
                 </table>-->
             </div>
@@ -89,9 +77,9 @@
         </div>
     </main>
     <script src="js/superUsuario.js"></script>
-   <script src="js/appSuperUsuario.js"></script> 
+    <script src="js/appSuperUsuario.js"></script>
     <script src="js/superUsuarioSes.js"></script>
     <script src="https://kit.fontawesome.com/c36077751b.js" crossorigin="anonymous"></script>
-    <script src="js/app-SuperUsuario.js"></script> 
+    <script src="js/app-SuperUsuario.js"></script>
 </body>
 </html>
