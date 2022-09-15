@@ -17,7 +17,7 @@ header{
 section{
     width: 100%;
     align-items: center;
-    margin: 0 50px;
+    margin-left: 15em;
 }
 
 .titulo {
@@ -92,7 +92,7 @@ main{
     flex-direction: column;
     background: #2C93E0;
     width: 15em;
-    height: 100%;
+    height: 170%;
     float: left;
     margin-left: -.5%;
     color: white;
@@ -111,11 +111,10 @@ main{
     width: 40%;
     align-items: center;
 }
-.Bienvenida {
+.Bienvenida{
     display: flex;
     font-size: 19px;
     margin-bottom: 1px;
-    margin-left: 15px;
 }
 .rol{
     margin-top: unset;

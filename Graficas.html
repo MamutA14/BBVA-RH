@@ -1,4 +1,57 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
+<html>
+<head>
+<script>
+let proof_total = 6;
+let array_y = [];
+let counter =0;
+let percentage;
+for(let i = 0; i < proof_total; i++){
+
+    do {
+        percentage = (Math.random()*100) + 1;
+    }
+    while(i < proof_total-1 && (counter + percentage >= 100))
+    
+    if(i == proof_total-1)
+        percentage = 100 - counter;
+    counter += percentage;
+    
+
+    array_y.push({
+        y:percentage,
+        label: `entrevistador ${i+1}`,
+        
+    });
+}
+console.log(array_y);
+window.onload = function() {
+//let proof_total = 6;
+
+var chart = new CanvasJS.Chart("chartContainer", {
+	animationEnabled: true,
+	title: {
+		text: "Experiencia de candidatos"
+	},
+	data: [{
+		type: "pie",
+		startAngle: 240,
+		yValueFormatString: "##0.00\"%\"",
+		indexLabel: "{label} {y}",
+		dataPoints: array_y,
+	}]
+});
+chart.render();
+
+}
+</script>
+</head>
+<body>
+<div id="chartContainer" style="height: 300px; width: 100%;"></div>
+<script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+</body>
+</html>
+<!--<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -89,3 +142,4 @@
 </body>
 </html>
 
+-->
