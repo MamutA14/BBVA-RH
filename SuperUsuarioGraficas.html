@@ -1,0 +1,61 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/superU.css">
+    <title>Super Usuario</title>
+</head>
+<body>
+    <header>
+        <img class="img-logo" src="resources/img/bbva-logo.png" alt="BBVA" srcset="" width="138" height="43">
+        <div class="iconos">
+            <button id="bell-button"><i class="fa-solid fa-bell fa-2x"></i></button>
+            <button id="bars-button"><i class="fa-solid fa-bars fa-2x"></i></button>
+        </div>
+    </header>
+    <main>
+        <div class="nav">
+            <div class="options-nav">
+                <div class="cabeza-nav">
+                    <img src="resources/icons/person-circle.svg" id="user-pic" alt="FOTO PERFIL">
+                    <p class="Bienvenida"><strong id="name-user"></strong></p>
+                    <p class="rol">Administrador</p>
+                </div>
+            </div>
+            <div>
+                <ul class="menu-opciones">
+                    <li class="menu1"><i class="fa-solid fa-caret-right"></i>Admin
+                        <ul class="menu1">
+                            <li class="menu1"><a href="SuperU.html">Dashboard</a></li>
+                            <li class="menu1"><a href="Graficas.html">Graficos</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu2"><i class="fa-solid fa-caret-right"></i>RH
+                        <ul class="menu2">
+                            <li class="menu2"><a href="#">Candidatos</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <section>
+            <div id="chartContainer" class="graphs" style="height: 300px; width: 100%;"></div>
+            <div id="chartContainer2" class="graphs" style="height: 300px; width: 100%;"></div>
+        </section>
+        <div>
+
+        </div>
+    </main>
+    <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+    <script src="js/superUsuario.js"></script>
+    <!--<script src="js/appSuperUsuario.js"></script>-->
+    <script src="js/superUsuarioSes.js"></script>
+    <script src="https://kit.fontawesome.com/c36077751b.js" crossorigin="anonymous"></script>
+    <script src="js/app-SuperUsuario.js"></script>
+    <script src="./js/graficas.js"></script>
+</body>
+</html>

@@ -38,9 +38,7 @@ if(user === "" || pwd === ""){
             localStorage.setItem('user',user);
             localStorage.setItem('pwd',pwd);
             data_user = JSON.stringify(users.find((u)=>{return (u.email == user && u.address.zipcode == pwd)}));
-            //console.log(data_user);
             localStorage.setItem('data_user',data_user);
-            alert(users);
             switch(user && pwd){
                 case "Sincere@april.biz":
                 case "92998-3874":

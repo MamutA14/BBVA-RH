@@ -193,6 +193,9 @@ main{
     margin-bottom: 1px;
     margin-left: 15px;
 }
+#menu-graficos{
+    background: #2C93E0;
+}
 .rol{
     margin-top: unset;
     font-size: 14px;
@@ -263,4 +266,11 @@ button:hover{
         overflow-x: auto;
         white-space: nowrap;
     }
+}
+
+.canvasjs-chart-credit{
+    display: none;
+}
+.graphs{
+    margin-top: 5%;
 }

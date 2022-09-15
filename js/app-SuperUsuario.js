@@ -10,13 +10,13 @@ fetch('https://jsonplaceholder.typicode.com/users')
     const buscar = document.querySelector('#search');
     const buscarRH = document.querySelector('#searchRH');
     if(contenido !== null && buscar !== null){
-    console.log(contenido);
-    console.log(buscar);
+    /*console.log(contenido);
+    console.log(buscar);*/
     
 const filtrar = () =>{
 
 
-    let html = `<table>
+    let html = `<table id="tabla">
     <thead>
         <tr>
             <th>RH <i class="fa-sharp fa-solid fa-caret-down"></i></th>
@@ -64,8 +64,9 @@ const filtrar = () =>{
     }
     html += `</tbody>
     </table>`; 
+
     contenido.innerHTML = html;
-  console.log(superUsuario);
+  
     
 }
   filtrar();
@@ -120,4 +121,5 @@ const filtrarRH = () =>{
 filtrarRH();
 buscarRH.addEventListener('keyup',filtrarRH);
 }
- }
+    localStorage.setItem('rows',document.getElementById("tabla").rows.length);
+}

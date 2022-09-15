@@ -28,4 +28,10 @@ desplegable2[0,1,2].addEventListener('mouseout',() => {
     icono[1].classList.add('fa-caret-right');
     console.log(icono);
 });
+/*document.getElementById('menu-graficos').addEventListener('click',()=>{
+    const $contenido = document.querySelector('section');
+    $contenido.innerHTML = null;
+    document.querySelector('html').innerHTML= `<script>console.log("ddcdcd")</script>`
+    $contenido.innerHTML = `hola`;
+});*/
 
