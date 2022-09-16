@@ -35,56 +35,23 @@
     </div>
    </div>
    <section id="id-contenido">
-    <div class="titulo">
+    <div class="titulo" id="id-titulo">
      <h1>Candidatos</h1>
      <div class="buscar">
       <i class="fa fa-search" style="color: white; margin: 5px 3px 5px 10px;" aria-hidden="true"></i>
       <input type="search" id="search" placeholder="Buscar candidato...">
      </div>
     </div>
-    <div class="tabla">
-     <!--<table>
-      <thead>
-       <tr>
-        <th><dd>Nombre<i class="fa-sharp fa-solid fa-caret-down"></i></dd></th>
-        <th>Posición <i class="fa-sharp fa-solid fa-caret-down"></i></th>
-        <th>Registro <i class="fa-sharp fa-solid fa-caret-down"></i></th>
-        <th>Estatus <i class="fa-sharp fa-solid fa-caret-down"></i></th>
-        <th></th>
-       </tr>
-      </thead>
-      <tbody>
-       <tr>
-        <td><dd>Alan Josue Lopez Lopez</dd></td>
-        <td>Frontend Developer</td>
-        <td>22/08/2022</td>
-        <td>Por revisar</td>
-        <td class="opcion"><button><i class="fa-solid fa-eye"></i> Ver Perfil</button></td>
-       </tr>
-       <tr>
-        <td><dd>Jorge Aguilar Hernandez</dd></td>
-        <td>Frontend Developer</td>
-        <td>25/08/2022</td>
-        <td>Por revisar</td>
-        <td class="opcion"><button><i class="fa-solid fa-eye"></i> Ver Perfil</button></td>
-       </tr>
-       <tr>
-        <td><dd>Set Reyes Sandoval</dd></td>
-        <td>Frontend Developer</td>
-        <td>20/08/2022</td>
-        <td>En revision</td>
-        <td class="opcion"><button><i class="fa-solid fa-pen"></i> Editar</button></td>
-       </tr>
-      </tbody>
-     </table>-->
-    </div>
+    <div class="tabla" id="id-tabla"></div>
    </section>
    <div class="" id="id-cortina"></div>
   </main>
   <!-- Iconos Font Awesome -->
   <script src="https://kit.fontawesome.com/c36077751b.js" crossorigin="anonymous"></script>
+  <!-- Libreria de Axios -->
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
   <!-- Agregando Funcionalidad -->
-  <script src="./js/entrevistador/Entrevistador.js"></script>
+  <script type="module" src="./js/entrevistador/Entrevistador.js"></script>
   <script src="./js/entrevistadorSes.js"></script>
   <script src="./js/app-entrevistador.js"></script>
  </body>

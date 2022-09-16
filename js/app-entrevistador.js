@@ -9,8 +9,6 @@ fetch('https://jsonplaceholder.typicode.com/users')
     const buscar = document.querySelector('#search');
 
 const filtrar = () =>{
-
-
     let html = `<table>
     <thead>
      <tr>
@@ -48,7 +46,6 @@ const filtrar = () =>{
     html += `</tbody>
     </table>`; 
     contenido.innerHTML = html;
-  console.log(entrevistador);
     
 }
 
