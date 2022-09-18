@@ -105,7 +105,10 @@ section{
     justify-content: space-between;
     align-items: center;
 }
-
+.tabla{
+    overflow: scroll;
+    height: 80%;
+}
 .tabla table{
     width: 100%;
 }

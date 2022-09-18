@@ -4,7 +4,8 @@ body {
 	font-family: 'Arial Narrow', Arial, sans-serif; 
 	font-size: 1em;
 	line-height: 1.5em;
- min-width: 100vh;
+    max-width: 100%;
+    max-height: 100%;
 }
 header{
     background: #006ec1;
@@ -30,8 +31,13 @@ section{
     align-items: center;
 }
 
+
+.tabla{
+    overflow: scroll;
+    height: 450px;  
+}
 .tabla table{
-  width: 100%;   
+  width: 100%; 
   border-collapse: collapse;
   border-spacing: 2px;
 }
