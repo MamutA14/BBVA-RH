@@ -171,6 +171,17 @@ button:hover{
     background-color: #0F74BE; 
 }
 
+.showNav{
+    display: flex;
+    flex-direction: column;
+    background: #2C93E0;
+    width: 15em;
+    height: 100%;
+    color: white; 
+    position: absolute;
+    right: 0;
+   }
+
 @media (max-width:923px) {
     main{
         margin: 0 15px;
@@ -187,7 +198,9 @@ button:hover{
         height: 38px;
         width: 35px;
         margin: 25px;
-    }
+       }
+
+
     .titulo{
         display: block;
     }

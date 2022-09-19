@@ -1,3 +1,20 @@
+const $btnMenu = document.getElementById("bars-button");
+$btnMenu.removeEventListener("click", Animacion);
+$btnMenu.addEventListener("click", Animacion);
+function Animacion() {
+    const $nav = document.getElementById("id-nav"); 
+    if (document.getElementById("id-cortina").className === "") {
+     $nav.classList.remove("nav")
+     $nav.classList.add("showNav");
+     document.getElementById("id-cortina").classList.add("mostrar");
+     document.getElementById("id-cortina").classList.add("muestraCortina");
+    } else {
+     $nav.classList.add("nav")
+     $nav.classList.remove("showNav");
+     document.getElementById("id-cortina").classList.remove("mostrar");
+     document.getElementById("id-cortina").classList.remove("muestraCortina");
+    }
+}
 const desplegable = document.querySelectorAll('.menu1');
 const desplegable2 = document.querySelectorAll('.menu2');
 
