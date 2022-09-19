@@ -56,8 +56,10 @@
             <input type="date" placeholder="Fecha de entrevista ">            
         </div>
         <div class="option" >
-            <label for="cv-button">Curriculum viate</label>
-            <input type="file" name="cv-button" id="cv-button" class="buttons-ops">
+            <div class="input-group carga-cv">
+             <label for="files" class="buttons-ops">Curriculum Vitae</label>
+             <input type="file" class="form-control" id="files" multiple style="display: none;">
+            </div>
             <!-- <a ><input type="file" id="cv-button"> <button class="buttons-ops" id="cv-button">Curriculum viate</button></a> -->
            <div id="sub">
                 <input class="buttons-ops" id="submit-button" type="button" value="Guardar">

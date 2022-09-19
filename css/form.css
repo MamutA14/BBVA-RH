@@ -37,6 +37,12 @@ input{
     border: 1px solid #006EC1;
     border-radius: 5px;
     margin-top: 5%;
+    cursor: pointer;
+}
+
+.carga-cv{ 
+ width: fit-content;
+ height: 26px;
 }
 
 /*@media (max-width:600px) {
